@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="TokiSync 使い方ガイド">
 <meta property="og:description" content="配信や企画演出を「タイミング」で管理し、OBSへ表示するためのツール、TokiSyncの使い方">
-<meta property="og:image" content="https://manachitose.github.io/TokiSync/icons/TokiSync_og_image.jpgg">
+<meta property="og:image" content="https://manachitose.github.io/TokiSync/icons/TokiSync_og_image.jpg">
 <meta property="og:url" content="https://manachitose.github.io/TokiSync/TokiSync.html">
 <meta property="og:site_name" content="TokiSync 使い方ガイド">
 <meta name="twitter:card" content="summary_large_image">
@@ -42,28 +42,27 @@
 
     <nav>
       <div class="nav-group">
-        <div class="nav-group-label">導入</div>
+        <div class="nav-group-label">まずはここから</div>
+        <a class="nav-link nav-link-primary" href="#guide-home"><span class="num">●</span>ガイドの入口</a>
+        <a class="nav-link nav-link-primary" href="#quick-start"><span class="num">▶</span>3分で始める</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">やりたいことから探す</div>
+        <a class="nav-link" href="#ch05"><span class="num">◷</span>時刻に合わせて出す</a>
+        <a class="nav-link" href="#ch06"><span class="num">⏱</span>時間を計る</a>
+        <a class="nav-link" href="#ch07"><span class="num">⌛</span>日時まで数える</a>
+        <a class="nav-link" href="#ch08"><span class="num">◴</span>時計を表示する</a>
+        <a class="nav-link" href="#ch09"><span class="num">✦</span>コメント等で演出する</a>
+        <a class="nav-link" href="#ch13"><span class="num">▣</span>OBSにつなぐ</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">詳しく調べる</div>
         <a class="nav-link" href="#ch01"><span class="num">01</span>はじめに</a>
         <a class="nav-link" href="#ch03"><span class="num">03</span>画面の基本操作</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">演出を作る</div>
         <a class="nav-link" href="#ch04"><span class="num">04</span>プリセットの基本</a>
-        <a class="nav-link" href="#ch05"><span class="num">05</span>アラーム</a>
-        <a class="nav-link" href="#ch06"><span class="num">06</span>タイマー</a>
-        <a class="nav-link" href="#ch07"><span class="num">07</span>カウントダウン</a>
-        <a class="nav-link" href="#ch08"><span class="num">08</span>時計表示</a>
-        <a class="nav-link" href="#ch09"><span class="num">09</span>オーバーレイ</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">アセットを管理する</div>
         <a class="nav-link" href="#ch10"><span class="num">10</span>メディア</a>
         <a class="nav-link" href="#ch11"><span class="num">11</span>スタイル</a>
         <a class="nav-link" href="#ch12"><span class="num">12</span>テーマ</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">配信・運用</div>
-        <a class="nav-link" href="#ch13"><span class="num">13</span>OBSに表示する</a>
         <a class="nav-link" href="#ch14"><span class="num">14</span>設定画面</a>
         <a class="nav-link" href="#ch15"><span class="num">15</span>バックアップ</a>
         <a class="nav-link" href="#ch16"><span class="num">16</span>よくある質問</a>
@@ -106,8 +105,58 @@
           </div>
         </div>
       </div>
-      <p class="doc-lede">配信や企画演出を「タイミング」で管理し、OBSへ表示するためのツール、TokiSyncの使い方をまとめています。左の目次から、気になる章へどうぞ。</p>
+      <p class="doc-lede">配信や企画演出を「タイミング」で管理し、OBSへ表示するためのツール、TokiSyncの使い方をまとめています。最初から全部読む必要はありません。やりたいことを選んで始めましょう。</p>
     </header>
+
+    <section class="guide-home" id="guide-home">
+      <div class="guide-home-heading">
+        <div>
+          <p class="section-eyebrow">START HERE</p>
+          <h2>今日は何をしたいですか？</h2>
+          <p>目的に近いものを選ぶと、必要な説明へ直接移動できます。</p>
+        </div>
+        <a class="start-button" href="#quick-start">3分で始める <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="purpose-grid">
+        <a class="purpose-card" href="#ch05"><span class="purpose-icon" aria-hidden="true">◷</span><strong>決まった時刻に出す</strong><span>時報・定期告知・開始時刻の演出</span></a>
+        <a class="purpose-card" href="#ch06"><span class="purpose-icon" aria-hidden="true">⏱</span><strong>時間を計る</strong><span>耐久・制限時間・残り時間表示</span></a>
+        <a class="purpose-card" href="#ch07"><span class="purpose-icon" aria-hidden="true">⌛</span><strong>日時まで数える</strong><span>発売日・誕生日・締切の告知</span></a>
+        <a class="purpose-card" href="#ch08"><span class="purpose-icon" aria-hidden="true">◴</span><strong>時計を表示する</strong><span>現在時刻や日付を配信画面へ</span></a>
+        <a class="purpose-card" href="#ch09"><span class="purpose-icon" aria-hidden="true">✦</span><strong>コメント等で演出する</strong><span>わんコメ・キー操作から単発発火</span></a>
+        <a class="purpose-card" href="#ch13"><span class="purpose-icon" aria-hidden="true">▣</span><strong>OBSにつなぐ</strong><span>配信への表示と操作ドックの設定</span></a>
+      </div>
+
+      <div class="support-links" aria-label="そのほかの案内">
+        <a href="#ch10">素材を登録する</a>
+        <a href="#ch11">見た目を整える</a>
+        <a href="#ch15">バックアップする</a>
+        <a href="#ch16">困ったとき</a>
+      </div>
+    </section>
+
+    <section class="quick-start" id="quick-start">
+      <div class="chapter-kicker"><span class="num">▶</span><span class="label">QUICK START</span></div>
+      <h2 class="chapter-title">3分で始める</h2>
+      <p class="quick-start-lede">まずはタイマーを1つ作り、OBSに映すところまで進めます。TokiSyncに共通する「<span class="keyword-mark">プリセット → イベント → 詳細設定 → OBS</span>」の流れを一度に試せます。</p>
+
+      <ol class="step-list">
+        <li><span class="step-number">1</span><div><strong>タイマーを開いて、プリセットを作る</strong><p>トップ画面から「タイマー」を開き、「新規プリセット」を押します。名前と時間を決めれば準備完了です。</p></div></li>
+        <li><span class="step-number">2</span><div><strong>イベントと表示内容を追加する</strong><p>イベントを追加して発火タイミングを決め、詳細設定から画像・動画・音声・テキストのいずれかを追加します。</p></div></li>
+        <li><span class="step-number">3</span><div><strong>プレビューで確認する</strong><p>画面上部のプレビューで見た目を確認し、「プレビュー再生」で一回分の演出を確認します。</p></div></li>
+        <li><span class="step-number">4</span><div><strong>Player画面URLをOBSへ貼る</strong><p>編集画面右上のURLをコピーし、OBSの「ブラウザ」ソースへ貼り付けます。詳しいサイズ設定は<a href="#ch13">OBSの章</a>で確認できます。</p></div></li>
+      </ol>
+
+      <div class="quick-start-actions">
+        <a class="start-button" href="#ch06">タイマーの詳しい使い方へ</a>
+        <a class="secondary-button" href="#ch04">EventとActionを理解する</a>
+      </div>
+
+      <div class="obs-paths">
+        <div><span class="path-label">配信画面に映す</span><strong>Player画面URL</strong><p>OBSの「ソース」にブラウザソースとして追加します。</p></div>
+        <a class="obs-path-link" href="#custom-dock-setup"><span class="path-label">OBSから操作する</span><strong>操作パネル（ドック）URL</strong><p>OBSの「カスタムブラウザドック」に追加します。タイマーとカウントダウンを操作できます。</p><span class="path-jump">登録手順を見る →</span></a>
+      </div>
+    </section>
 
     <!-- 01 -->
     <section class="chapter" id="ch01">
@@ -118,15 +167,15 @@
       <p>TokiSyncは、配信や企画の演出を「タイミング」を軸に管理し、OBSの画面へ表示するためのツールです。「指定の時刻になったら告知画像を出す」「タイマーが0になったら効果音を鳴らす」「あと3日でグッズ発売、という残り時間を常時表示する」といった、時間に連動した演出を設定できます。</p>
 
       <h3>何ができるか</h3>
-      <p>TokiSyncには5種類の演出（プリセット種別）があります。</p>
-      <ul>
-        <li><strong>アラーム</strong>: 指定した時刻になったら演出を自動再生します。配信中の時報演出や、定期的な告知などに向いています。</li>
-        <li><strong>タイマー</strong>: 経過時間を使った演出です。残り時間表示やHPバーのようなステータス表示、指定したタイミングでの自動演出ができ、耐久企画や制限時間チャレンジなどに向いています。</li>
-        <li><strong>カウントダウン</strong>: 指定した日時までの残り時間、ステータスを表示します。誕生日、グッズ発売、クラウドファンディングの締め切りなどに向いています。また、同時視聴配信の画面演出にも使えるオプションを用意しています</li>
-        <li><strong>時計表示</strong>: 現在時刻や日付を指定のフォントで指定の場所に表示させる機能です</li>
-        <li><strong>オーバーレイ</strong>: ショートカットキー、またはコメントビューア「わんコメ」との連携で、任意のタイミングに演出を単発発火します。スパチャ演出や初見歓迎演出など、他の4種類のような定期的・連続的なタイミングでは表現しづらい演出に向いています。</li>
-      </ul>
-      <p>いずれも、画像・動画・GIF・音声・テキストを組み合わせて表示でき、見た目（フォント・色・位置など）は「スタイル」として各機能での再利用もしやすい形になっています。</p>
+      <p>TokiSyncには、目的の異なる5種類の演出があります。</p>
+      <div class="feature-grid">
+        <a href="#ch05"><strong>アラーム</strong><span>決まった時刻に、時報や告知を自動再生</span></a>
+        <a href="#ch06"><strong>タイマー</strong><span>耐久・制限時間・HPバーなどを管理</span></a>
+        <a href="#ch07"><strong>カウントダウン</strong><span>発売日や締切までの残り時間を表示</span></a>
+        <a href="#ch08"><strong>時計表示</strong><span>現在時刻や日付を配信画面に常設</span></a>
+        <a href="#ch09"><strong>オーバーレイ</strong><span>キー操作やコメントをきっかけに単発演出</span></a>
+      </div>
+      <p class="section-note">画像・動画・GIF・音声・テキストを組み合わせられます。フォントや色、位置は「スタイル」として再利用できます。</p>
 
       <h3>基本的な考え方</h3>
       <p>演出は「いつ実行するか」（<strong>Event</strong>）と「何を実行するか」（<strong>Action</strong>）の組み合わせで作ります。</p>
@@ -882,7 +931,99 @@
         <figcaption>OBS側の「ブラウザソースを追加」ダイアログ</figcaption>
       </figure>
 
-      <h3>3. 設定変更の反映について</h3>
+      <h3>3. OBSへ操作パネルを追加する</h3>
+      <p>タイマーとカウントダウンは、OBSのカスタムブラウザドックから操作できます。配信中にTokiSyncの編集画面へ切り替えず、OBS内で開始・一時停止や時刻調整を行いたい場合に使用します。</p>
+      <div class="obs-paths compact">
+        <div><span class="path-label">映像を表示するURL</span><strong>Player画面URL</strong><p>プリセットごとに異なり、OBSの「ブラウザ」ソースへ設定します。</p></div>
+        <div><span class="path-label">操作するURL</span><strong>OBS操作パネル（ドック）URL</strong><p>ポート番号に連動し、OBSの「カスタムブラウザドック」へ設定します。</p></div>
+      </div>
+
+      <h4>設定する前に</h4>
+      <ul class="check-list">
+        <li>TokiSyncを起動しておきます</li>
+        <li>操作したいタイマーまたはカウントダウンのPlayer画面を、OBSのブラウザソースへ追加しておきます</li>
+        <li>設定画面の「プレイヤー配信ポート番号」を変更した直後は、先にTokiSyncを再起動します</li>
+      </ul>
+
+      <h4 class="guide-subtitle" id="custom-dock-setup">カスタムブラウザドックの登録手順</h4>
+      <ol>
+        <li>TokiSyncのサイドメニューから「設定」を開きます</li>
+        <li>「保存先・接続設定」にある「OBS操作パネル（ドック）URL」をコピーします。既定のポート番号なら <code>http://localhost:4867/dock</code> です</li>
+        <li>OBS上部メニューの「ドック」から「カスタムブラウザドック」を開きます</li>
+        <li>「ドック名」に <code>TokiSync</code> など分かりやすい名前を入力します</li>
+        <li>「URL」に、TokiSyncでコピーした操作パネルURLを貼り付けます</li>
+        <li>「適用」を押してウィンドウを閉じます。TokiSync操作パネルがOBS内に表示されます</li>
+        <li>パネルをドラッグして、OBS内の使いやすい位置へ固定します。横幅を少し広めにすると日時入力も確認しやすくなります</li>
+      </ol>
+
+      <div class="dock-guide" aria-label="OBSカスタムブラウザドックの登録画面">
+        <figure class="screenshot">
+          <div class="shot-frame">
+            <span class="shot-number" aria-hidden="true">1</span>
+            <img src="screenshots/ch13-obs-dock-menu.png" alt="OBS上部のドックメニューを開き、カスタムブラウザドックを選択する画面">
+            <span class="shot-highlight" style="left:21%; top:30%; width:50%; height:8%;" aria-hidden="true"></span>
+          </div>
+          <figcaption><strong>「ドック」→「カスタムブラウザドック」を開く</strong>OBS上部の「ドック」メニューから選択します。</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <div class="shot-frame">
+            <span class="shot-number" aria-hidden="true">2</span>
+            <img src="screenshots/ch13-obs-custom-dock-dialog.png" alt="カスタムブラウザドック画面で、ドック名TokiSyncと操作パネルURLを入力した状態">
+            <span class="shot-highlight" style="left:4%; top:23%; width:94%; height:9%;" aria-hidden="true"></span>
+          </div>
+          <figcaption><strong>名前と操作パネルURLを入力する</strong>ドック名は「TokiSync」、URLはTokiSyncの設定画面からコピーしたものを貼り付け、「適用」を押します。</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <div class="shot-frame">
+            <span class="shot-number" aria-hidden="true">3</span>
+            <img src="screenshots/ch13-obs-dock-enabled.png" alt="OBSのドックメニューでTokiSyncにチェックが入り、表示が有効になった状態">
+            <span class="shot-highlight" style="left:22%; top:36%; width:56%; height:17%;" aria-hidden="true"></span>
+          </div>
+          <figcaption><strong>TokiSync操作パネルを表示する</strong>OBSの「ドック」メニューでTokiSyncにチェックが付いていれば表示されています。</figcaption>
+        </figure>
+      </div>
+
+      <figure class="screenshot">
+        <img src="screenshots/ch14-settings-top.png" alt="TokiSync設定画面の保存先・接続設定。プレイヤー配信ポート番号とOBS操作パネルURLを確認できる">
+        <figcaption>TokiSyncの設定画面。「OBS操作パネル（ドック）URL」はプレイヤー配信ポート番号の近くにあります</figcaption>
+      </figure>
+
+      <h4>操作パネルでできること</h4>
+      <table>
+        <thead><tr><th>対象</th><th>主な操作</th></tr></thead>
+        <tbody>
+          <tr><td><strong>タイマー</strong></td><td>開始、一時停止、再開、リセット、残り時間の入力、時間の追加、終了後の表示設定</td></tr>
+          <tr><td><strong>カウントダウン</strong></td><td>開始時刻・目標日時の変更、現在時刻へのリセット、時間の追加、終了後カウントアップと終了条件、終了後の表示設定</td></tr>
+        </tbody>
+      </table>
+      <p>操作パネル上部の時計は、配信中に現在時刻を確認するための表示です。右上の「再読み込み」は、TokiSync再起動後などに接続し直す場合に使います。</p>
+
+      <h4>操作対象について</h4>
+      <ul>
+        <li><strong>Standard版</strong>: 現在OBSで開かれている同種のPlayer画面を操作します。タイマーを複数同時に開くなど、同じ種類のPlayer画面を複数使う運用には向きません</li>
+        <li><strong>PRO版</strong>: 「対象プリセット」から個別のプリセットを選んで操作できます。「すべて（プリセット未指定）」を選ぶと、開かれている同種のPlayer画面へ一括で操作を送ります</li>
+      </ul>
+      <p>操作したいPlayer画面がOBSで開かれていない場合は「アクティブなプレイヤー画面がありません」と表示されます。PRO版で対象プリセットを選んだ場合は保存済みの時間や目標日時を確認できますが、その状態ではPlayer画面の実行状態は変更できません。</p>
+
+      <div class="callout note">
+        <span class="icon" aria-hidden="true">i</span>
+        <p><strong>操作パネルは配信映像には映りません。</strong> OBSを操作するための画面です。演出を配信に映すには、別途Player画面URLをOBSの「ブラウザ」ソースへ追加してください。</p>
+      </div>
+
+      <h4>つながらないとき</h4>
+      <ul>
+        <li><strong>操作パネル自体が表示されない</strong>: TokiSyncが起動しているか、URLのポート番号が設定画面と一致しているか確認します</li>
+        <li><strong>「アクティブなプレイヤー画面がありません」と表示される</strong>: 対象のPlayer画面を設定したOBSブラウザソースが読み込まれているか確認し、そのブラウザソースを右クリックして「更新」します</li>
+        <li><strong>再起動後に操作できない</strong>: 操作パネル右上の「再読み込み」を押し、Player側のブラウザソースも更新します</li>
+        <li><strong>ポート番号を変更した</strong>: TokiSyncを再起動し、新しい操作パネルURLをOBSのカスタムブラウザドックへ設定し直します。Player画面URLも同様に更新が必要です</li>
+      </ul>
+
+      <div class="callout warn">
+        <span class="icon" aria-hidden="true">!</span>
+        <p>配信前に、操作パネルからタイマーまたはカウントダウンを一度操作し、OBS上の表示が連動することを確認してください。配信中はTokiSyncを終了しないでください。</p>
+      </div>
+
+      <h3>4. 設定変更の反映について</h3>
       <p>TokiSync側でイベントの追加・変更・削除、詳細設定の追加・変更・削除・並び替えを保存すると、OBSに表示中のPlayer画面は自動的に最新の内容へ更新されます。ブラウザソースを都度作り直す必要はありません。</p>
       <div class="callout warn">
         <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none"/></svg></span>
@@ -890,7 +1031,7 @@
       </div>
       <p>また、TokiSyncアプリを再起動すると、OBSに表示中のPlayer画面との接続が一度切れます（自動的には再接続しません）。Player画面上に再読み込みを促す表示が出るので、その場合もOBS側でブラウザソースを更新してください。設定画面（14章）でポート番号やデータフォルダを変更した際は、再起動が必要になるため、あわせてブラウザソースの更新も必要になります。</p>
 
-      <h3>4. 注意点</h3>
+      <h3>5. 注意点</h3>
       <ul>
         <li>Player画面はTokiSyncアプリ本体が起動している間のみ動作します。配信中はTokiSyncを閉じないようにしてください</li>
         <li>設定画面（14章）でプレイヤー配信ポート番号を変更した場合、URLの一部（<code>4867</code>の部分）が変わります。変更後は改めてURLをコピーし直し、OBS側のブラウザソースにも設定し直してください（反映にはTokiSyncの再起動が必要です）</li>
@@ -920,6 +1061,7 @@
             <p>わんコメ連携（9章）を使っている場合、ポート番号を変更したらわんコメ側のテンプレートにもポート番号の書き換え・再読み込みが必要です。詳しくは9章を参照してください。</p>
           </div>
         </li>
+        <li><strong>OBS操作パネル（ドック）URL</strong>: タイマー・カウントダウンをOBSから操作するためのURLです。ポート番号から自動的に決まり、変更後の設定方法は13章で説明しています</li>
       </ul>
 
       <figure class="screenshot">

@@ -44,29 +44,28 @@
 
     <nav>
       <div class="nav-group">
-        <div class="nav-group-label">導入</div>
-        <a class="nav-link" href="#ch01"><span class="num">01</span>はじめに</a>
-        <a class="nav-link" href="#ch02"><span class="num">02</span>基本の流れ</a>
+        <div class="nav-group-label">まずはここから</div>
+        <a class="nav-link nav-link-primary" href="#guide-home"><span class="num">●</span>ガイドの入口</a>
+        <a class="nav-link nav-link-primary" href="#quick-start"><span class="num">▶</span>3分で始める</a>
       </div>
       <div class="nav-group">
-        <div class="nav-group-label">使い方</div>
+        <div class="nav-group-label">やりたいことから探す</div>
+        <a class="nav-link" href="#story-schedule"><span class="num">📅</span>週間スケジュール画像</a>
+        <a class="nav-link" href="#story-csv"><span class="num">🖼</span>CSVでサムネ量産</a>
+        <a class="nav-link" href="#story-reuse"><span class="num">🔁</span>レイアウトの使い回し</a>
+      </div>
+      <div class="nav-group">
+        <div class="nav-group-label">詳しく調べる</div>
+        <a class="nav-link" href="#ch01"><span class="num">01</span>はじめに</a>
+        <a class="nav-link" href="#ch02"><span class="num">02</span>基本の流れ</a>
         <a class="nav-link" href="#ch03"><span class="num">03</span>要素を追加・編集する</a>
         <a class="nav-link" href="#ch04"><span class="num">04</span>キャンバス操作</a>
         <a class="nav-link" href="#ch05"><span class="num">05</span>要素一覧(レイヤー)パネル</a>
         <a class="nav-link" href="#ch06"><span class="num">06</span>テンプレート一覧画面の操作</a>
         <a class="nav-link" href="#ch07"><span class="num">07</span>生成する</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">詳細設定</div>
         <a class="nav-link" href="#ch08"><span class="num">08</span>CSVを設定する</a>
         <a class="nav-link" href="#ch09"><span class="num">09</span>日付フォーマット設定</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">目的から選ぶ</div>
         <a class="nav-link" href="#ch10"><span class="num">10</span>ユーザーストーリー別ガイド</a>
-      </div>
-      <div class="nav-group">
-        <div class="nav-group-label">ファイルの扱い</div>
         <a class="nav-link" href="#ch11"><span class="num">11</span>エクスポート・インポート</a>
         <a class="nav-link" href="#ch12"><span class="num">12</span>よくある質問</a>
       </div>
@@ -108,8 +107,51 @@
           </div>
         </div>
       </div>
-      <p class="doc-lede">「毎週・毎回同じレイアウトの画像を作る作業」を数十秒で終わらせるための、テンプレートベース画像生成ツール、Templatteの使い方をまとめています。左の目次から、気になる章へどうぞ。</p>
+      <p class="doc-lede">「毎週・毎回同じレイアウトの画像を作る作業」を数十秒で終わらせるための、テンプレートベース画像生成ツール、Templatteの使い方をまとめています。最初から全部読む必要はありません。やりたいことを選んで始めましょう。</p>
     </header>
+
+    <section class="guide-home" id="guide-home">
+      <div class="guide-home-heading">
+        <div>
+          <p class="section-eyebrow">START HERE</p>
+          <h2>今日は何を作りたいですか?</h2>
+          <p>目的に近いものを選ぶと、必要な説明へ直接移動できます。</p>
+        </div>
+        <a class="start-button" href="#quick-start">3分で始める <span aria-hidden="true">→</span></a>
+      </div>
+
+      <div class="purpose-grid">
+        <a class="purpose-card" href="#story-schedule"><span class="purpose-icon" aria-hidden="true">📅</span><strong>週間スケジュール画像</strong><span>日付・曜日を手入力せずに毎週量産</span></a>
+        <a class="purpose-card" href="#story-csv"><span class="purpose-icon" aria-hidden="true">🖼</span><strong>CSVでサムネ量産</strong><span>タイトル一覧から一括生成</span></a>
+        <a class="purpose-card" href="#story-reuse"><span class="purpose-icon" aria-hidden="true">🔁</span><strong>レイアウトの使い回し</strong><span>毎回同じ構図を数十秒で作る</span></a>
+        <a class="purpose-card" href="#ch02"><span class="purpose-icon" aria-hidden="true">🧭</span><strong>まずは画面構成を知る</strong><span>編集画面・一覧画面のざっくり案内</span></a>
+      </div>
+
+      <div class="support-links" aria-label="そのほかの案内">
+        <a href="#ch08">CSVを設定する</a>
+        <a href="#ch09">日付フォーマット設定</a>
+        <a href="#ch11">エクスポート・インポート</a>
+        <a href="#ch12">よくある質問</a>
+      </div>
+    </section>
+
+    <section class="quick-start" id="quick-start">
+      <div class="chapter-kicker"><span class="num">▶</span><span class="label">QUICK START</span></div>
+      <h2 class="chapter-title">3分で始める</h2>
+      <p class="quick-start-lede">Templatteの基本の流れ「<span class="keyword-mark">要素を配置 → 値の出どころを決める → 生成する</span>」を、テンプレートを1つ作りながら一度に試します。</p>
+
+      <ol class="step-list">
+        <li><span class="step-number">1</span><div><strong>テンプレート一覧画面で「新規作成」を押す</strong><p>真っさらなテンプレートが作られ、そのまま編集画面が開きます。</p></div></li>
+        <li><span class="step-number">2</span><div><strong>テキスト・画像の要素を配置する</strong><p>要素一覧パネルの「+テキストを追加」「+画像を追加」で要素を置き、位置やフォントを調整します。</p></div></li>
+        <li><span class="step-number">3</span><div><strong>「値の出どころ」を決める</strong><p>固定文字のままでよい要素はそのまま、行ごとに変えたい要素はスロット(CSV)・自動日付・連番のいずれかに設定します。</p></div></li>
+        <li><span class="step-number">4</span><div><strong>「生成...」で一括書き出しする</strong><p>ファイル名ルールと出力形式(JPEG/PNG)を決めて「生成開始」を押すと、指定フォルダへまとめて書き出されます。</p></div></li>
+      </ol>
+
+      <div class="quick-start-actions">
+        <a class="start-button" href="#ch03">要素の追加・編集を詳しく見る</a>
+        <a class="secondary-button" href="#ch07">生成の詳しい手順へ</a>
+      </div>
+    </section>
 
     <!-- 01 -->
     <section class="chapter" id="ch01">
@@ -121,19 +163,13 @@
       <p>Photoshopや Canva のような、自由に描画・加工できる汎用の画像編集ソフトではありません。装飾イラストやロゴなどの「素材そのもの」は、別のツールで作ったものをはめ込んで使う前提です。Templatteが担うのは「どこに何を配置するか」というレイアウトと、その量産だけに絞っています。</p>
 
       <h3>何ができるか</h3>
-      <p>できることは、大きく分けて4つです。</p>
-      <ul>
-        <li><strong>テンプレート編集</strong>: テキスト・画像の要素をキャンバス上に配置し、フォント・色・位置などを設定して <code>.templatte</code> ファイルとして保存する</li>
-        <li><strong>値の差し込み</strong>: 保存したテンプレートの「値が入る欄(スロット)」に、次の3つの方式のいずれかで値を流し込む
-          <ul>
-            <li><strong>連番</strong>: 001, 002, 003…のような通し番号</li>
-            <li><strong>CSV</strong>: あらかじめ用意したタイトル一覧などのテキスト(1行 = 1枚)</li>
-            <li><strong>日付自動計算</strong>: 基準日から○日ずらした日付・曜日を自動計算</li>
-          </ul>
-        </li>
-        <li><strong>一括生成</strong>: ファイル名ルールを決めて、指定フォルダへ画像(JPEG / 透過PNG)をまとめて書き出す</li>
-        <li><strong>テンプレートライブラリ</strong>: これまでに開いたテンプレートを一覧・検索し、お気に入り登録やタグ付けで管理する</li>
-      </ul>
+      <p>できることは、大きく分けて4つです。値の差し込み方式(連番・CSV・日付自動計算)は8〜9章で詳しく説明します。</p>
+      <div class="feature-grid">
+        <a href="#ch03"><strong>テンプレート編集</strong><span>テキスト・画像をキャンバス上に配置し、フォント・色・位置を設定して <code>.templatte</code> として保存</span></a>
+        <a href="#ch08"><strong>値の差し込み</strong><span>「値が入る欄(スロット)」に連番・CSV・日付自動計算のいずれかで値を流し込む</span></a>
+        <a href="#ch07"><strong>一括生成</strong><span>ファイル名ルールを決めて、指定フォルダへ画像(JPEG / 透過PNG)をまとめて書き出す</span></a>
+        <a href="#ch06"><strong>テンプレートライブラリ</strong><span>これまでに開いたテンプレートを一覧・検索し、お気に入り登録やタグ付けで管理する</span></a>
+      </div>
 
       <div class="callout note">
         <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="8" x2="12" y2="13"/><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none"/></svg></span>
@@ -567,19 +603,19 @@
       <h2 class="chapter-title">ユーザーストーリー別ガイド</h2>
       <p>「結局、自分の作りたいものにはどの機能を使えばいいのか」を、想定シーンごとにまとめました。</p>
 
-      <div class="story-card">
+      <div class="story-card" id="story-schedule">
         <span class="story-role">VTuber</span>
         <p class="story-quote">毎週配信スケジュール画像を作る際、日付と曜日を手入力せずに済ませたい</p>
         <div class="story-answer"><span class="arrow">→</span><span>日付を表示するテキスト要素の「値の出どころ」を<strong>自動日付</strong>にし、月〜日の7要素をオフセット0〜6で並べます。基準日(週の初日)だけテンプレートに設定しておけば、曜日表記(<code>{weekday_ja}</code> など)を含めて自動計算されます。翌週分を作る際は基準日を書き換えるだけで済み、手入力は不要です(8〜9章)。</span></div>
       </div>
 
-      <div class="story-card">
+      <div class="story-card" id="story-csv">
         <span class="story-role">動画投稿者</span>
         <p class="story-quote">CSVで用意したタイトル一覧から、サムネイルを一括生成したい</p>
         <div class="story-answer"><span class="arrow">→</span><span>タイトルを表示するテキスト要素の「値の出どころ」を<strong>スロット</strong>にし、スロット名をCSVの列名と揃えます。編集画面で「CSVを設定」からタイトル一覧のCSVを読み込むと、その列名と一致するスロットにはCSVの値がそのまま使われます。あとは「生成...」でファイル名ルールと出力形式を決めれば、CSVの行数分だけサムネイルが一括生成されます(8章)。</span></div>
       </div>
 
-      <div class="story-card">
+      <div class="story-card" id="story-reuse">
         <span class="story-role">ラジオ配信者</span>
         <p class="story-quote">毎回同じレイアウトのサムネイルを、数十秒で作り終えたい</p>
         <div class="story-answer"><span class="arrow">→</span><span>レイアウトそのものが <code>.templatte</code> ファイルとして保存されている、という仕組みが答えになります。一度テンプレートを作ってしまえば、次回以降は「テンプレート読み込み」でそのファイルを開き、変わる部分(回のタイトルなど)だけ「値の出どころ」に差し込んで「生成...」するだけです。デザインを毎回作り直す必要がありません(2章)。</span></div>

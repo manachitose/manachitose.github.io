@@ -174,6 +174,10 @@
     font-weight: 700;
   }
   .nav-link.active .num { color: var(--templatte-accent); }
+  .nav-link-primary {
+    color: var(--templatte-text);
+    font-weight: 700;
+  }
 
   .theme-toggle {
     display: flex;
@@ -394,9 +398,170 @@
 
   .doc-lede {
     font-size: 16.5px;
-    color: var(--tokisync-text-muted);
+    color: var(--templatte-text-muted);
     margin: 0;
   }
+
+  /* ---------- guide home / quick start ---------- */
+  .guide-home,
+  .quick-start {
+    max-width: 760px;
+    scroll-margin-top: 24px;
+  }
+  .guide-home {
+    margin: 0 0 72px;
+  }
+  .guide-home-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 24px;
+    margin-bottom: 22px;
+  }
+  .section-eyebrow {
+    margin: 0 0 6px;
+    color: var(--templatte-accent);
+    font-family: var(--templatte-font-mono);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.1em;
+  }
+  .guide-home h2 {
+    margin: 0 0 6px;
+    font-size: 27px;
+    line-height: 1.4;
+  }
+  .guide-home-heading p:last-child,
+  .quick-start-lede {
+    margin: 0;
+    color: var(--templatte-text-muted);
+  }
+  .start-button,
+  .secondary-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    min-height: 44px;
+    padding: 9px 16px;
+    border-radius: var(--templatte-radius-s);
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-decoration: none;
+  }
+  .start-button {
+    flex: none;
+    background: var(--templatte-accent);
+    color: var(--templatte-accent-ink);
+  }
+  .start-button:hover { filter: brightness(1.06); }
+  .secondary-button {
+    border: 1px solid var(--templatte-border);
+    color: var(--templatte-text);
+    background: var(--templatte-surface);
+  }
+  .secondary-button:hover { border-color: var(--templatte-accent); color: var(--templatte-accent); }
+  .purpose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px;
+  }
+  .purpose-card {
+    display: grid;
+    grid-template-columns: 38px 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 12px;
+    padding: 16px;
+    border: 1px solid var(--templatte-border);
+    border-radius: var(--templatte-radius-m);
+    background: var(--templatte-surface);
+    color: var(--templatte-text);
+    text-decoration: none;
+    transition: border-color 140ms ease, background 140ms ease, transform 140ms ease;
+  }
+  .purpose-card:hover {
+    border-color: var(--templatte-accent);
+    background: var(--templatte-accent-soft);
+    transform: translateY(-1px);
+  }
+  .purpose-icon {
+    grid-row: 1 / 3;
+    display: grid;
+    place-items: center;
+    width: 38px;
+    height: 38px;
+    border-radius: var(--templatte-radius-s);
+    background: var(--templatte-accent-soft);
+    color: var(--templatte-accent);
+    font-size: 19px;
+  }
+  .purpose-card strong { font-size: 15px; }
+  .purpose-card > span:last-child {
+    color: var(--templatte-text-muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .support-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px 18px;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid var(--templatte-border-soft);
+  }
+  .support-links a { font-size: 13.5px; text-decoration: none; }
+  .support-links a::after { content: " →"; }
+
+  .quick-start {
+    margin: 0 0 88px;
+    padding: 24px;
+    border: 1px solid var(--templatte-border);
+    border-radius: var(--templatte-radius-m);
+    background: var(--templatte-surface);
+  }
+  .step-list {
+    display: grid;
+    gap: 0;
+    margin: 24px 0;
+    padding: 0;
+    list-style: none;
+  }
+  .step-list li {
+    position: relative;
+    display: grid;
+    grid-template-columns: 34px 1fr;
+    gap: 12px;
+    margin: 0;
+    padding: 0 0 22px;
+  }
+  .step-list li:last-child { padding-bottom: 0; }
+  .step-list li:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 32px;
+    bottom: 0;
+    left: 16px;
+    width: 1px;
+    background: var(--templatte-border);
+  }
+  .step-number {
+    position: relative;
+    z-index: 1;
+    display: grid;
+    place-items: center;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--templatte-accent);
+    color: var(--templatte-accent-ink);
+    font-family: var(--templatte-font-mono);
+    font-size: 13px;
+    font-weight: 800;
+  }
+  .step-list strong { display: block; margin: 3px 0 4px; }
+  .step-list p { margin: 0; color: var(--templatte-text-muted); font-size: 14px; }
+  .quick-start-actions { display: flex; flex-wrap: wrap; gap: 10px; }
 
   section.chapter { max-width: 700px; margin: 0 0 88px; scroll-margin-top: 24px; }
   section.chapter:last-of-type { margin-bottom: 24px; }
@@ -413,19 +578,176 @@
   }
   .chapter-kicker .label { font-size: 12.5px; color: var(--templatte-text-faint-solid); letter-spacing: 0.04em; }
 
-  h2.chapter-title { font-size: 27px; font-weight: 800; margin: 0 0 18px; letter-spacing: -0.005em; text-wrap: balance; }
+  h2.chapter-title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 800;
+    margin: 0 0 24px;
+    padding-bottom: 10px;
+    letter-spacing: -0.005em;
+    text-wrap: balance;
+  }
+  h2.chapter-title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 52px;
+    height: 3px;
+    border-radius: 999px;
+    background: var(--templatte-accent);
+  }
   section.chapter > p:first-of-type { font-size: 16.5px; color: var(--templatte-text-muted); }
 
   h3 { font-size: 18px; font-weight: 700; margin: 34px 0 12px; padding-top: 4px; }
+  section.chapter > h3 {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+    padding: 0 0 8px;
+    border-bottom: 1px solid var(--templatte-border);
+  }
+  section.chapter > h3::before {
+    content: "";
+    flex: none;
+    width: 5px;
+    height: 1.15em;
+    border-radius: 999px;
+    background: var(--templatte-accent);
+  }
   h4 { font-size: 15px; font-weight: 700; margin: 24px 0 8px; color: var(--templatte-text); }
 
   p { margin: 0 0 14px; }
   section.chapter p { color: var(--templatte-text); }
 
+  .keyword-mark {
+    color: var(--templatte-text);
+    font-weight: 700;
+    text-decoration-line: underline;
+    text-decoration-color: var(--templatte-accent);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 4px;
+  }
+
   ul, ol { margin: 0 0 16px; padding-left: 1.3em; }
   li { margin-bottom: 8px; }
   li:last-child { margin-bottom: 0; }
   li > ul, li > ol { margin-top: 8px; }
+
+  /* 長い説明リストは、カード化せず余白と細い区切りで読み分ける */
+  section.chapter > ul {
+    display: grid;
+    gap: 14px;
+    padding: 0;
+    list-style: none;
+  }
+  section.chapter > ul > li {
+    position: relative;
+    margin: 0;
+    padding: 0 0 14px 22px;
+    border-bottom: 1px solid var(--templatte-border-soft);
+  }
+  section.chapter > ul > li::before {
+    content: "";
+    position: absolute;
+    top: 0.72em;
+    left: 3px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--templatte-accent);
+  }
+  section.chapter > ul > li:last-child { padding-bottom: 0; border-bottom: 0; }
+  section.chapter > ul > li strong:first-child { color: var(--templatte-accent); }
+
+  /* 「項目名: 説明」の一覧は、設定項目としてカードで区切る */
+  section.chapter > ul > li:has(> strong:first-child) {
+    padding: 13px 15px;
+    border: 1px solid var(--templatte-border-soft);
+    border-radius: var(--templatte-radius-s);
+    background: var(--templatte-surface-2);
+  }
+  section.chapter > ul > li:has(> strong:first-child)::before { display: none; }
+  section.chapter > ul > li:has(> strong:first-child) > strong:first-child {
+    display: inline-block;
+    margin-right: 0.2em;
+  }
+
+  /* 操作手順は番号を軸に縦へ読み進める */
+  section.chapter > ol {
+    display: grid;
+    gap: 22px;
+    padding: 0;
+    list-style: none;
+    counter-reset: chapter-step;
+  }
+  section.chapter > ol > li {
+    position: relative;
+    min-height: 34px;
+    margin: 0;
+    padding: 3px 0 0 48px;
+    counter-increment: chapter-step;
+  }
+  section.chapter > ol > li:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    top: 34px;
+    bottom: -22px;
+    left: 16px;
+    width: 1px;
+    background: var(--templatte-border);
+  }
+  section.chapter > ol > li::before {
+    content: counter(chapter-step);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: var(--templatte-accent);
+    color: var(--templatte-accent-ink);
+    font-family: var(--templatte-font-mono);
+    font-size: 12px;
+    font-weight: 800;
+  }
+
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+    margin: 0 0 16px;
+  }
+  .feature-grid a {
+    display: block;
+    padding: 14px;
+    border: 1px solid var(--templatte-border);
+    border-radius: var(--templatte-radius-m);
+    background: var(--templatte-surface-2);
+    color: var(--templatte-text);
+    text-decoration: none;
+  }
+  .feature-grid a:hover { border-color: var(--templatte-accent); }
+  .feature-grid a:last-child:nth-child(odd) { grid-column: 1 / -1; }
+  .feature-grid strong {
+    display: block;
+    margin-bottom: 3px;
+    color: var(--templatte-accent);
+  }
+  .feature-grid span {
+    display: block;
+    color: var(--templatte-text-muted);
+    font-size: 13px;
+    line-height: 1.55;
+  }
+  .section-note {
+    padding: 10px 12px;
+    border-radius: var(--templatte-radius-s);
+    background: var(--templatte-accent-soft);
+    font-size: 14px;
+  }
 
   strong { font-weight: 700; color: var(--templatte-text); }
   a { color: var(--templatte-accent); }
@@ -483,7 +805,15 @@
 
   .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin: 0 0 18px; }
   .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0 0 18px; }
-  @media (max-width: 640px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+  @media (max-width: 640px) {
+    .grid-2, .grid-3 { grid-template-columns: 1fr; }
+    .guide-home-heading { display: block; }
+    .guide-home-heading .start-button { margin-top: 16px; }
+    .purpose-grid,
+    .feature-grid { grid-template-columns: 1fr; }
+    .feature-grid a:last-child:nth-child(odd) { grid-column: auto; }
+    .quick-start { padding: 20px 16px; }
+  }
   .fact-card {
     border: 1px solid var(--templatte-border);
     border-radius: var(--templatte-radius-m);
@@ -512,6 +842,7 @@
   table code { white-space: nowrap; }
 
   .story-card {
+    scroll-margin-top: 24px;
     border: 1px solid var(--templatte-border);
     border-radius: var(--templatte-radius-m);
     padding: 18px 20px;
