@@ -48,21 +48,29 @@
       </div>
       <div class="nav-group">
         <div class="nav-group-label">やりたいことから探す</div>
-        <a class="nav-link" href="#ch05"><span class="num">◷</span>時刻に合わせて出す</a>
-        <a class="nav-link" href="#ch06"><span class="num">⏱</span>時間を計る</a>
-        <a class="nav-link" href="#ch07"><span class="num">⌛</span>日時まで数える</a>
+        <a class="nav-link" href="#ch05"><span class="num">◷</span>アラームを設定する</a>
+        <a class="nav-link" href="#ch06"><span class="num">⏱</span>タイマーを使う</a>
+        <a class="nav-link" href="#ch07"><span class="num">⌛</span>カウントダウンを表示する</a>
         <a class="nav-link" href="#ch08"><span class="num">◴</span>時計を表示する</a>
         <a class="nav-link" href="#ch09"><span class="num">✦</span>コメント等で演出する</a>
         <a class="nav-link" href="#ch13"><span class="num">▣</span>OBSにつなぐ</a>
       </div>
+      <div class="nav-separator" aria-hidden="true"></div>
       <div class="nav-group">
-        <div class="nav-group-label">詳しく調べる</div>
-        <a class="nav-link" href="#ch01"><span class="num">01</span>はじめに</a>
+        <div class="nav-group-label">詳細ガイド</div>
+        <a class="nav-link" href="#ch01"><span class="num">01</span>TokiSyncとは</a>
+        <a class="nav-link" href="#quick-start"><span class="num">02</span>3分で始める</a>
         <a class="nav-link" href="#ch03"><span class="num">03</span>画面の基本操作</a>
         <a class="nav-link" href="#ch04"><span class="num">04</span>プリセットの基本</a>
+        <a class="nav-link" href="#ch05"><span class="num">05</span>アラーム</a>
+        <a class="nav-link" href="#ch06"><span class="num">06</span>タイマー</a>
+        <a class="nav-link" href="#ch07"><span class="num">07</span>カウントダウン</a>
+        <a class="nav-link" href="#ch08"><span class="num">08</span>時計表示</a>
+        <a class="nav-link" href="#ch09"><span class="num">09</span>オーバーレイ</a>
         <a class="nav-link" href="#ch10"><span class="num">10</span>メディア</a>
         <a class="nav-link" href="#ch11"><span class="num">11</span>スタイル</a>
         <a class="nav-link" href="#ch12"><span class="num">12</span>テーマ</a>
+        <a class="nav-link" href="#ch13"><span class="num">13</span>OBSに表示する</a>
         <a class="nav-link" href="#ch14"><span class="num">14</span>設定画面</a>
         <a class="nav-link" href="#ch15"><span class="num">15</span>バックアップ</a>
         <a class="nav-link" href="#ch16"><span class="num">16</span>よくある質問</a>
@@ -119,10 +127,10 @@
       </div>
 
       <div class="purpose-grid">
-        <a class="purpose-card" href="#ch05"><span class="purpose-icon" aria-hidden="true">◷</span><strong>決まった時刻に出す</strong><span>時報・定期告知・開始時刻の演出</span></a>
-        <a class="purpose-card" href="#ch06"><span class="purpose-icon" aria-hidden="true">⏱</span><strong>時間を計る</strong><span>耐久・制限時間・残り時間表示</span></a>
-        <a class="purpose-card" href="#ch07"><span class="purpose-icon" aria-hidden="true">⌛</span><strong>日時まで数える</strong><span>発売日・誕生日・締切の告知</span></a>
-        <a class="purpose-card" href="#ch08"><span class="purpose-icon" aria-hidden="true">◴</span><strong>時計を表示する</strong><span>現在時刻や日付を配信画面へ</span></a>
+        <a class="purpose-card" href="#ch05"><span class="purpose-icon" aria-hidden="true">◷</span><strong>決まった時刻に演出する</strong><span>時報・定期告知・開始時刻の演出</span></a>
+        <a class="purpose-card" href="#ch06"><span class="purpose-icon" aria-hidden="true">⏱</span><strong>タイマーで時間を計る</strong><span>耐久・制限時間・残り時間表示</span></a>
+        <a class="purpose-card" href="#ch07"><span class="purpose-icon" aria-hidden="true">⌛</span><strong>指定日時までカウントダウン</strong><span>発売日・誕生日・締切の告知</span></a>
+        <a class="purpose-card" href="#ch08"><span class="purpose-icon" aria-hidden="true">◴</span><strong>現在時刻を表示する</strong><span>現在時刻や日付を配信画面へ</span></a>
         <a class="purpose-card" href="#ch09"><span class="purpose-icon" aria-hidden="true">✦</span><strong>コメント等で演出する</strong><span>わんコメ・キー操作から単発発火</span></a>
         <a class="purpose-card" href="#ch13"><span class="purpose-icon" aria-hidden="true">▣</span><strong>OBSにつなぐ</strong><span>配信への表示と操作ドックの設定</span></a>
       </div>
@@ -161,9 +169,8 @@
     <!-- 01 -->
     <section class="chapter" id="ch01">
       <div class="chapter-kicker"><span class="num">01</span><span class="label">導入</span></div>
-      <h2 class="chapter-title">はじめに</h2>
+      <h2 class="chapter-title">TokiSyncとは</h2>
 
-      <h3>TokiSyncとは</h3>
       <p>TokiSyncは、配信や企画の演出を「タイミング」を軸に管理し、OBSの画面へ表示するためのツールです。「指定の時刻になったら告知画像を出す」「タイマーが0になったら効果音を鳴らす」「あと3日でグッズ発売、という残り時間を常時表示する」といった、時間に連動した演出を設定できます。</p>
 
       <h3>何ができるか</h3>
@@ -257,7 +264,7 @@
       <p>まずはサイドメニューから作りたい演出の種類（アラーム／タイマー／カウントダウン／時計表示）を選ぶところから始めます。それぞれの作り方は5章以降で説明します。</p>
 
       <div class="chapter-nav">
-        <a class="prev" href="#ch01"><span class="dir">前へ</span>01. はじめに</a>
+        <a class="prev" href="#ch01"><span class="dir">前へ</span>01. TokiSyncとは</a>
         <a class="next" href="#ch04"><span class="dir">次へ</span>04. プリセットの基本</a>
       </div>
     </section>
@@ -716,36 +723,72 @@
         <figcaption>わんコメ連動の種別選択欄</figcaption>
       </figure>
 
-      <h5 style="margin:20px 0 10px; font-size:14px; font-weight:700;">わんコメ側にテンプレートを設定する</h5>
-      <p>わんコメからTokiSyncへコメントを通知するには、専用のテンプレートを、わんコメの「プラグイン」としてあらかじめ読み込んでおく必要があります。テンプレートはTokiSync本体には同梱されておらず、BOOTHから別途入手します。</p>
+      <h5>わんコメ側にテンプレートを設定する</h5>
+      <p>わんコメからTokiSyncへコメントを通知するには、TokiSyncから書き出した専用テンプレートを、わんコメの「プラグイン」としてあらかじめ読み込んでおく必要があります。書き出されるテンプレートには、このPCのTokiSyncと安全に連携するためのToken情報と、現在のプレイヤー配信ポート番号が設定されています。</p>
       <ol>
-        <li>BOOTHの配布ページから「<strong>TokiSync-onecomme-template</strong>」のzipをダウンロードし、任意のフォルダに展開します</li>
+        <li>TokiSyncのオーバーレイ画面で「<strong>テンプレートを書き出す</strong>」を押し、<code>TokiSync-onecomme-template.zip</code>を任意の場所へ保存します</li>
+        <li>保存したzipファイルを解凍します。解凍後の「<strong>TokiSync-onecomme-template</strong>」フォルダは、配信時にもわんコメから参照できる場所に保管してください</li>
         <li>わんコメを開き、トップ画面から「プラグイン」の設定に進みます</li>
-        <li>「テンプレート追加」から、展開したフォルダを指定して読み込みます</li>
+        <li>「テンプレート追加」から、解凍した「TokiSync-onecomme-template」フォルダを指定して読み込みます</li>
       </ol>
 
       <div class="screenshot-row">
         <figure class="screenshot">
-          <img src="screenshots/ch09-onecomme-setup-1-top.jpg" alt="わんコメのトップ画面">
-          <figcaption>1. わんコメのトップ画面</figcaption>
+          <img src="screenshots/ch09-onecomme-export-template.png" alt="TokiSyncのオーバーレイ画面にあるテンプレートを書き出すボタン">
+          <figcaption>1. TokiSyncで「テンプレートを書き出す」を押す</figcaption>
         </figure>
         <figure class="screenshot">
-          <img src="screenshots/ch09-onecomme-setup-2-menu.jpg" alt="わんコメのメニューからプラグイン・テンプレートへ進む">
-          <figcaption>2. メニュー→プラグイン→テンプレート</figcaption>
+          <img src="screenshots/ch09-onecomme-extracted-folder.png" alt="書き出したzipと、解凍後のTokiSync-onecomme-templateフォルダ">
+          <figcaption>2. zipを解凍し、テンプレートフォルダを保管する</figcaption>
         </figure>
       </div>
-      <figure class="screenshot">
-        <img src="screenshots/ch09-onecomme-setup-3-add.jpg" alt="テンプレートの追加操作">
-        <figcaption>3. テンプレートを追加する</figcaption>
-      </figure>
-      <figure class="screenshot">
-        <img src="screenshots/ch09-onecomme-setup-5-confirm.jpg" alt="テンプレートが読み込まれ、一覧に表示されている状態">
-        <figcaption>4. 一覧にテンプレートが表示されていれば設定完了</figcaption>
-      </figure>
+      <div class="screenshot-row">
+        <figure class="screenshot">
+          <img src="screenshots/ch09-onecomme-plugin-menu.png" alt="わんコメのメニューからプラグインのテンプレート設定へ進む画面">
+          <figcaption>3. わんコメでプラグインのテンプレート設定を開く</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <img src="screenshots/ch09-onecomme-plugin-added.png" alt="わんコメのプラグイン一覧にTokiSync-onecomme-templateが追加された状態">
+          <figcaption>4. 解凍したフォルダを指定して読み込む</figcaption>
+        </figure>
+      </div>
 
       <div class="callout warn">
         <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none"/></svg></span>
-        <p>TokiSync側で<strong>プレイヤー配信ポート番号</strong>（14章）を既定（4867）から変更している場合は、テンプレート内のポート番号もその値に書き換え、わんコメ側でテンプレートを読み込み直す（またはわんコメを再起動する）必要があります。</p>
+        <p><strong>BOOTHで配布されているテンプレートをそのまま読み込んでも連携できません。</strong>Token情報を設定するため、必ず使用するPCのTokiSyncからテンプレートを書き出してください。また、プレイヤー配信ポート番号を変更した場合も、テンプレートを再度書き出し、わんコメへ読み込み直してください。</p>
+      </div>
+
+      <div class="callout warn">
+        <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none"/></svg></span>
+        <p><strong>テンプレートを更新する場合は、すでに登録しているものを一度削除してから設定してください。</strong>同名のテンプレートは設定できません。</p>
+      </div>
+
+      <h5>連動用テンプレートをOBSソースとして追加する</h5>
+      <p>オーバーレイのPlayer画面をOBSへ追加する場合は、Player画面のブラウザソースに加えて、わんコメ側の「<strong>わんコメ×TokiSync 連動用テンプレート</strong>」も同じシーンのOBSソースとして追加する必要があります。このソースがないと、わんコメで受信したコメントがTokiSyncへ通知されません。</p>
+      <ol>
+        <li>わんコメで「<strong>…</strong>」メニューを開き、「<strong>テンプレート</strong>」を選択します</li>
+        <li>表示されたポップアップで「<strong>わんコメ×TokiSync 連動用テンプレート</strong>」を検索します</li>
+        <li>ヒットしたテンプレートの「<strong>ここをドラッグしてOBSに入れる</strong>」を、OBSのソース欄へドラッグ＆ドロップします</li>
+        <li>OBSの同じシーンに、TokiSyncのオーバーレイPlayer画面と連動用テンプレートの両方があることを確認します</li>
+      </ol>
+
+      <div class="screenshot-row">
+        <figure class="screenshot">
+          <img src="screenshots/ch09-onecomme-plugin-menu.png" alt="わんコメの三点メニューを開き、テンプレートを選択する画面">
+          <figcaption>1. 「…」メニューから「テンプレート」を開く</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <figcaption>2. 「わんコメ×TokiSync 連動用テンプレート」を検索する</figcaption>
+        </figure>
+      </div>
+      <figure class="screenshot">
+         <img src="screenshots/ch09-onecomme-template-search.png" alt="テンプレートのポップアップで、わんコメ×TokiSync 連動用テンプレートを検索した結果">
+        <figcaption>3. 「ここをドラッグしてOBSに入れる」をOBSのソース欄へ追加する</figcaption>
+      </figure>
+
+      <div class="callout note">
+        <span class="icon" aria-hidden="true">i</span>
+        <p>OBSへ追加された連動用テンプレートのブラウザソースにも、13章の「<a href="#obs-browser-source-options">ブラウザソースのおすすめ設定</a>」を設定しておくことをおすすめします。</p>
       </div>
 
       <div class="callout note">
@@ -762,7 +805,7 @@
       </div>
 
       <h3>4. OBSに表示する</h3>
-      <p>編集画面の右上に、選択中プリセットのPlayer画面URLが表示されます。このURLをOBSのBrowser Sourceに設定する手順は13章と同じです。オーバーレイのPlayer画面は、他のプリセット種別と異なりアラームに近い「イベント一覧」形式で表示され、各イベントのショートカットキーと概要を確認できます。</p>
+      <p>編集画面の右上に、選択中プリセットのPlayer画面URLが表示されます。このURLをOBSのBrowser Sourceに設定する手順は13章と同じです。わんコメ連携を使用する場合は、上記の「わんコメ×TokiSync 連動用テンプレート」も同じシーンのOBSソースへ追加してください。オーバーレイのPlayer画面は、他のプリセット種別と異なりアラームに近い「イベント一覧」形式で表示され、各イベントのショートカットキーと概要を確認できます。</p>
 
 
       <div class="chapter-nav">
@@ -926,10 +969,15 @@
       </ol>
       <p>プリセットの画面比率は、各編集画面の「画面比率」設定で切り替えられます（4章参照）。</p>
 
-      <figure class="screenshot">
-        <img src="screenshots/ch13-obs-browser-source.png" alt="OBS側の「ブラウザソースを追加」ダイアログ。幅・高さ入力欄が見える">
-        <figcaption>OBS側の「ブラウザソースを追加」ダイアログ</figcaption>
+      <figure class="screenshot" id="obs-browser-source-options">
+        <img src="screenshots/ch13-obs-browser-source.png" alt="OBS側のブラウザソース設定ダイアログ。幅・高さとおすすめオプションが見える">
+        <figcaption>OBS側のブラウザソース設定。幅・高さと下部のオプションを設定する</figcaption>
       </figure>
+
+      <div class="callout note">
+        <span class="icon" aria-hidden="true">i</span>
+        <p><strong>ブラウザソースのおすすめ設定:</strong> 「表示されていないときにソースをシャットダウンする」と「シーンがアクティブになったときにブラウザの表示を更新する」にチェックを入れておくことをおすすめします。TokiSyncのPlayer画面と、わんコメ×TokiSync連動用テンプレートのブラウザソースの両方に設定してください。</p>
+      </div>
 
       <h3>3. OBSへ操作パネルを追加する</h3>
       <p>タイマーとカウントダウンは、OBSのカスタムブラウザドックから操作できます。配信中にTokiSyncの編集画面へ切り替えず、OBS内で開始・一時停止や時刻調整を行いたい場合に使用します。</p>
@@ -1058,7 +1106,7 @@
         <li><strong>プレイヤー配信ポート番号</strong>: Player画面URL（13章）で使われるポート番号です（既定は4867）。変更すると、OBSに設定しているURLも変更後のものに更新し直す必要があります。反映には次回起動が必要です
           <div class="callout warn" style="margin-top:10px;">
             <span class="icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.3 3.9 1.8 18a2 2 0 0 0 1.7 3h17a2 2 0 0 0 1.7-3L13.7 3.9a2 2 0 0 0-3.4 0Z"/><line x1="12" y1="9" x2="12" y2="13"/><circle cx="12" cy="16.3" r="0.6" fill="currentColor" stroke="none"/></svg></span>
-            <p>わんコメ連携（9章）を使っている場合、ポート番号を変更したらわんコメ側のテンプレートにもポート番号の書き換え・再読み込みが必要です。詳しくは9章を参照してください。</p>
+            <p>わんコメ連携（9章）を使っている場合、ポート番号を変更したらTokiSyncから連動用テンプレートを再度書き出し、わんコメへ読み込み直す必要があります。詳しくは9章を参照してください。</p>
           </div>
         </li>
         <li><strong>OBS操作パネル（ドック）URL</strong>: タイマー・カウントダウンをOBSから操作するためのURLです。ポート番号から自動的に決まり、変更後の設定方法は13章で説明しています</li>
@@ -1195,16 +1243,16 @@
       <p>正常な動作です。バックアップにはサムネイル画像自体は含まれておらず、復元後にメディア管理画面を開くと自動的に再生成されます（15章）。</p>
 
       <h3>配信中、PCの動作が重くなる／TokiSyncのメモリ使用量が気になる</h3>
-      <p>TokiSyncはある程度のメモリ（常駐で数百MB程度）を使用します。OBSやゲームなど他のアプリと同時に動かす配信環境で動作が重いと感じた場合は、以下を試してみてください。</p>
+      <p>OBSへ追加したブラウザソースの設定によっては、表示していないシーンのソースも動作し続け、OBSのメモリ使用量が大きくなる場合があります。TokiSyncのPlayer画面と、わんコメ×TokiSync連動用テンプレートの各ブラウザソースで、次の項目にチェックが入っているか確認してください。</p>
       <ul>
-        <li>設定画面の「未使用アセットのクリーンアップ」で、どのプリセットからも参照されていないメディア・スタイルを整理する</li>
-        <li>設定画面の「未アクセスプリセットの整理」で、30日以上配信で使われていないプリセットを確認し、不要であれば削除する</li>
+        <li><strong>表示されていないときにソースをシャットダウンする</strong></li>
+        <li><strong>シーンがアクティブになったときにブラウザの表示を更新する</strong></li>
       </ul>
-      <p>ただし、メモリ使用量の大部分はTokiSyncが内蔵しているブラウザエンジンの基本コストのため、上記を行っても劇的には減りません。配信用PCのスペックと相談しながら、他のアプリと合わせて全体のリソース配分を調整してください。</p>
+      <p>設定箇所は、13章の「<a href="#obs-browser-source-options">ブラウザソースのおすすめ設定</a>」を参照してください。</p>
 
       <div class="chapter-nav">
         <a class="prev" href="#ch15"><span class="dir">前へ</span>15. バックアップ</a>
-        <a class="next" href="#ch01"><span class="dir">最初へ</span>01. はじめに</a>
+        <a class="next" href="#ch01"><span class="dir">最初へ</span>01. TokiSyncとは</a>
       </div>
     </section>
 
