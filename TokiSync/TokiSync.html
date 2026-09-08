@@ -21,9 +21,10 @@
 <meta name="twitter:title" content="TokiSync 使い方ガイド">
 <meta name="twitter:description" content="配信や企画演出を「タイミング」で管理し、OBSへ表示するためのツール、TokiSyncの使い方">
 <meta name="twitter:image" content="https://manachitose.github.io/TokiSync/icons/TokiSync_og_image.jpg">
+<link rel="stylesheet" href="../assets/guide/guide.css">
 <link rel="stylesheet" href="TokiSync.css">
 </head>
-<body>
+<body data-guide-id="tokisync" data-guide-share-text="TokiSync 使い方ガイド">
 
 <div id="progress"></div>
 
@@ -1216,12 +1217,12 @@
         <tbody>
           <tr>
             <td>縦向き（9:16）</td>
-            <td style="font-family:var(--tokisync-font-mono); white-space:nowrap;">幅1640 × 高さ1920</td>
+            <td style="font-family:var(--guide-font-mono); white-space:nowrap;">幅1640 × 高さ1920</td>
             <td>正確な値。UIエリアの高さは常にRenderAreaと同じ高さに固定される作りのため、幅（RenderArea 1080 + UIエリア分）だけ広げれば過不足なく収まります。UIエリアの幅はプリセット種別によって多少異なります</td>
           </tr>
           <tr>
             <td>横向き（16:9）</td>
-            <td style="font-family:var(--tokisync-font-mono); white-space:nowrap;">幅1920 × 高さ2000前後</td>
+            <td style="font-family:var(--guide-font-mono); white-space:nowrap;">幅1920 × 高さ2000前後</td>
             <td>目安。UIエリアの高さが中身の量に応じて伸び縮みする作りのため決まった数値はなく、イベント数などによって前後します。実際に開いて過不足を見ながら調整してください</td>
           </tr>
         </tbody>
@@ -1260,7 +1261,7 @@
   </main>
 </div>
 
-<script src="TokiSync.js"></script>
+<script src="../assets/guide/guide.js"></script>
 
 </body>
 </html>

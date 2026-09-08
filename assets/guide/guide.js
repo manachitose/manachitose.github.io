@@ -1,9 +1,11 @@
 (function () {
   "use strict";
 
+  var guideConfig = document.body.dataset;
+
   /* theme toggle: cycles system → dark → light → system */
   var root = document.documentElement;
-  var STORAGE_KEY = "tokisync-guide-theme";
+  var STORAGE_KEY = "chitose-guide-theme";
   var themeToggle = document.getElementById("themeToggle");
   var themeLabel = document.getElementById("themeLabel");
 
@@ -47,7 +49,7 @@
   if (shareBtn) {
     var shareData = {
       title: document.title,
-      text: "TokiSync 使い方ガイド",
+      text: guideConfig.guideShareText || document.title,
       url: location.href
     };
 
