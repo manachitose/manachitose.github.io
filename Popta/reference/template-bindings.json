@@ -1,0 +1,1182 @@
+[
+  {
+    "catalogKey": "accentColorEnabled",
+    "binding": "accentColorEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "align",
+    "binding": "align",
+    "valueType": "select",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global",
+    "options": [
+      "left",
+      "center",
+      "right"
+    ]
+  },
+  {
+    "catalogKey": "badge:extra.backgroundOpacity",
+    "binding": "extra.backgroundOpacity",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.barBackgroundColor",
+    "binding": "extra.barBackgroundColor",
+    "valueType": "color",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.borderColor",
+    "binding": "extra.borderColor",
+    "valueType": "color",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.borderOpacity",
+    "binding": "extra.borderOpacity",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.borderWidthPx",
+    "binding": "extra.borderWidthPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 64,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.contentAlign",
+    "binding": "extra.contentAlign",
+    "valueType": "select",
+    "options": [
+      "left",
+      "center",
+      "right"
+    ],
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.cornerRadiusPx",
+    "binding": "extra.cornerRadiusPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.diameterPx",
+    "binding": "extra.diameterPx",
+    "valueType": "number",
+    "safeMin": 1,
+    "safeMax": 2048,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.dividerColor",
+    "binding": "extra.dividerColor",
+    "valueType": "color",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.dividerWidthPx",
+    "binding": "extra.dividerWidthPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 64,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.iconCornerRadiusPx",
+    "binding": "extra.iconCornerRadiusPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.iconGapPx",
+    "binding": "extra.iconGapPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 2048,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.labelFontScale",
+    "binding": "extra.labelFontScale",
+    "valueType": "number",
+    "safeMin": 0.01,
+    "safeMax": 10,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.labelValueGapPx",
+    "binding": "extra.labelValueGapPx",
+    "valueType": "number",
+    "safeMin": -512,
+    "safeMax": 2048,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.minWidthPx",
+    "binding": "extra.minWidthPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 7680,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.outlineColorRole",
+    "binding": "extra.outlineColorRole",
+    "valueType": "select",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ],
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.outlineEnabled",
+    "binding": "extra.outlineEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.paddingH",
+    "binding": "extra.paddingH",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.paddingV",
+    "binding": "extra.paddingV",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.promptChar",
+    "binding": "extra.promptChar",
+    "valueType": "text",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonAngleDeg",
+    "binding": "extra.ribbonAngleDeg",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonColor",
+    "binding": "extra.ribbonColor",
+    "valueType": "color",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonCornerRadiusPx",
+    "binding": "extra.ribbonCornerRadiusPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonFontScale",
+    "binding": "extra.ribbonFontScale",
+    "valueType": "number",
+    "safeMin": 0.01,
+    "safeMax": 10,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonGapPx",
+    "binding": "extra.ribbonGapPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 2048,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonPaddingHPx",
+    "binding": "extra.ribbonPaddingHPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonPaddingVPx",
+    "binding": "extra.ribbonPaddingVPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.ribbonText",
+    "binding": "extra.ribbonText",
+    "valueType": "text",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.shadowAngle",
+    "binding": "extra.shadowAngle",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.shadowBlur",
+    "binding": "extra.shadowBlur",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 256,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.shadowColorRole",
+    "binding": "extra.shadowColorRole",
+    "valueType": "select",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ],
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.shadowDistance",
+    "binding": "extra.shadowDistance",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 256,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.shadowEnabled",
+    "binding": "extra.shadowEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.splitLabelRatioPercent",
+    "binding": "extra.splitLabelRatioPercent",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 100,
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.swapColors",
+    "binding": "extra.swapColors",
+    "valueType": "boolean",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "badge:extra.terminalTextColor",
+    "binding": "extra.terminalTextColor",
+    "valueType": "color",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "itemGap",
+    "binding": "itemGap",
+    "valueType": "number",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 2048
+  },
+  {
+    "catalogKey": "wrapGap",
+    "binding": "wrapGap",
+    "valueType": "number",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 2048
+  },
+  {
+    "catalogKey": "wrapMaxWidthPx",
+    "binding": "wrapMaxWidthPx",
+    "valueType": "number",
+    "targets": [
+      "badge"
+    ],
+    "panel": "global",
+    "safeMin": 1,
+    "safeMax": 7680
+  },
+  {
+    "catalogKey": "items.*.badgeEnabled",
+    "binding": "items.*.badgeEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge"
+    ],
+    "panel": "item"
+  },
+  {
+    "catalogKey": "items.*.label",
+    "binding": "items.*.label",
+    "valueType": "text",
+    "targets": [
+      "badge"
+    ],
+    "panel": "item"
+  },
+  {
+    "catalogKey": "baseColor",
+    "binding": "baseColor",
+    "valueType": "color",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "font",
+    "binding": "font",
+    "valueType": "font",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "fontSize",
+    "binding": "fontSize",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 1,
+    "safeMax": 512
+  },
+  {
+    "catalogKey": "labelColor",
+    "binding": "labelColor",
+    "valueType": "color",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "posX",
+    "binding": "posX",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 7680
+  },
+  {
+    "catalogKey": "posY",
+    "binding": "posY",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 7680
+  },
+  {
+    "catalogKey": "swapBaseAccent",
+    "binding": "swapBaseAccent",
+    "valueType": "boolean",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "textOutlineColorRole",
+    "binding": "textOutlineColorRole",
+    "valueType": "select",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ]
+  },
+  {
+    "catalogKey": "textOutlineEnabled",
+    "binding": "textOutlineEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "textOutlineWidth",
+    "binding": "textOutlineWidth",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 64
+  },
+  {
+    "catalogKey": "textShadowAngle",
+    "binding": "textShadowAngle",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": -360,
+    "safeMax": 360
+  },
+  {
+    "catalogKey": "textShadowBlur",
+    "binding": "textShadowBlur",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 256
+  },
+  {
+    "catalogKey": "textShadowColorRole",
+    "binding": "textShadowColorRole",
+    "valueType": "select",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ]
+  },
+  {
+    "catalogKey": "textShadowDistance",
+    "binding": "textShadowDistance",
+    "valueType": "number",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 0,
+    "safeMax": 256
+  },
+  {
+    "catalogKey": "textShadowEnabled",
+    "binding": "textShadowEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "items.*.accentColor",
+    "binding": "items.*.accentColor",
+    "valueType": "color",
+    "targets": [
+      "badge",
+      "popup"
+    ],
+    "panel": "item"
+  },
+  {
+    "catalogKey": "popup:animation.enterDurationSec",
+    "binding": "animation.enterDurationSec",
+    "valueType": "number",
+    "safeMin": 0.01,
+    "safeMax": 60,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterFade",
+    "binding": "animation.enterFade",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterRotate",
+    "binding": "animation.enterRotate",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterRotateStyle",
+    "binding": "animation.enterRotateStyle",
+    "valueType": "select",
+    "options": [
+      "normal",
+      "bounce"
+    ],
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterSlide",
+    "binding": "animation.enterSlide",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterSlideDirection",
+    "binding": "animation.enterSlideDirection",
+    "valueType": "select",
+    "options": [
+      "top",
+      "bottom",
+      "left",
+      "right"
+    ],
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.enterZoom",
+    "binding": "animation.enterZoom",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitDurationSec",
+    "binding": "animation.exitDurationSec",
+    "valueType": "number",
+    "safeMin": 0.01,
+    "safeMax": 60,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitFade",
+    "binding": "animation.exitFade",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitRotate",
+    "binding": "animation.exitRotate",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitSlide",
+    "binding": "animation.exitSlide",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitSlideDirection",
+    "binding": "animation.exitSlideDirection",
+    "valueType": "select",
+    "options": [
+      "top",
+      "bottom",
+      "left",
+      "right"
+    ],
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:animation.exitZoom",
+    "binding": "animation.exitZoom",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "durationMs",
+    "binding": "durationMs",
+    "valueType": "number",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global",
+    "safeMin": 100,
+    "safeMax": 600000
+  },
+  {
+    "catalogKey": "popup:extra.backgroundColor",
+    "binding": "extra.backgroundColor",
+    "valueType": "color",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.backgroundOpacity",
+    "binding": "extra.backgroundOpacity",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.cornerRadiusPx",
+    "binding": "extra.cornerRadiusPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.doubleBorder",
+    "binding": "extra.doubleBorder",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.flashDurationMs",
+    "binding": "extra.flashDurationMs",
+    "valueType": "number",
+    "safeMin": 1,
+    "safeMax": 600000,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.flashFontSizePx",
+    "binding": "extra.flashFontSizePx",
+    "valueType": "number",
+    "safeMin": 1,
+    "safeMax": 512,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.flashOpacity",
+    "binding": "extra.flashOpacity",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.flashTextOffsetXPx",
+    "binding": "extra.flashTextOffsetXPx",
+    "valueType": "number",
+    "safeMin": -7680,
+    "safeMax": 7680,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.flashTextOffsetYPx",
+    "binding": "extra.flashTextOffsetYPx",
+    "valueType": "number",
+    "safeMin": -7680,
+    "safeMax": 7680,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.gradientAngleDeg",
+    "binding": "extra.gradientAngleDeg",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.gradientEndColor",
+    "binding": "extra.gradientEndColor",
+    "valueType": "color",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.gradientPerItemEnabled",
+    "binding": "extra.gradientPerItemEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.gradientStartColor",
+    "binding": "extra.gradientStartColor",
+    "valueType": "color",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.outlineColorRole",
+    "binding": "extra.outlineColorRole",
+    "valueType": "select",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ],
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.outlineEnabled",
+    "binding": "extra.outlineEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.outlineWidth",
+    "binding": "extra.outlineWidth",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 64,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.paddingH",
+    "binding": "extra.paddingH",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.paddingV",
+    "binding": "extra.paddingV",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonAngleDeg",
+    "binding": "extra.ribbonAngleDeg",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonCornerRadiusPx",
+    "binding": "extra.ribbonCornerRadiusPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonFontScale",
+    "binding": "extra.ribbonFontScale",
+    "valueType": "number",
+    "safeMin": 0.01,
+    "safeMax": 10,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonGapPx",
+    "binding": "extra.ribbonGapPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 2048,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonPaddingHPx",
+    "binding": "extra.ribbonPaddingHPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonPaddingVPx",
+    "binding": "extra.ribbonPaddingVPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 1024,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.ribbonText",
+    "binding": "extra.ribbonText",
+    "valueType": "text",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.rotationDeg",
+    "binding": "extra.rotationDeg",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.shadowAngle",
+    "binding": "extra.shadowAngle",
+    "valueType": "number",
+    "safeMin": -360,
+    "safeMax": 360,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.shadowBlur",
+    "binding": "extra.shadowBlur",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 256,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.shadowColorRole",
+    "binding": "extra.shadowColorRole",
+    "valueType": "select",
+    "options": [
+      "accent",
+      "base",
+      "label"
+    ],
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.shadowDistance",
+    "binding": "extra.shadowDistance",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 256,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.shadowEnabled",
+    "binding": "extra.shadowEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.tailPositionPercent",
+    "binding": "extra.tailPositionPercent",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 100,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.typewriterAnimation",
+    "binding": "extra.typewriterAnimation",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "popup:extra.underlineWidthPx",
+    "binding": "extra.underlineWidthPx",
+    "valueType": "number",
+    "safeMin": 0,
+    "safeMax": 64,
+    "targets": [
+      "popup"
+    ],
+    "panel": "global"
+  },
+  {
+    "catalogKey": "items.*.gradientEndColor",
+    "binding": "items.*.gradientEndColor",
+    "valueType": "color",
+    "targets": [
+      "popup"
+    ],
+    "panel": "item"
+  },
+  {
+    "catalogKey": "items.*.popupEnabled",
+    "binding": "items.*.popupEnabled",
+    "valueType": "boolean",
+    "targets": [
+      "popup"
+    ],
+    "panel": "item"
+  },
+  {
+    "catalogKey": "items.*.popupText",
+    "binding": "items.*.popupText",
+    "valueType": "text",
+    "targets": [
+      "popup"
+    ],
+    "panel": "item"
+  }
+]

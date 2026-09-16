@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popta 使い方ガイド</title>
+<link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+<meta name="description" content="配信のリアルタイム情報を表示するわんコメテンプレートと、OBS用カスタムCSSを作成するPoptaの使い方">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Popta 使い方ガイド">
+<meta property="og:description" content="Poptaでわんコメテンプレートを準備し、表示デザインを作り、OBSへ設定するまでのガイド">
+<meta property="og:url" content="https://manachitose.github.io/Popta/Popta.html">
+<meta property="og:site_name" content="Popta 使い方ガイド">
+<meta name="twitter:card" content="summary">
+<link rel="stylesheet" href="../assets/guide/guide.css">
+<link rel="stylesheet" href="Popta.css">
+</head>
+<body data-guide-id="popta" data-guide-share-text="Popta 使い方ガイド">
+
+<div id="progress"></div>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="目次を開く">☰ 目次</button>
+<div class="sidebar-scrim" id="scrim"></div>
+
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand">
+      <span class="brand-logo"><img src="icons/logo.svg" alt="" width="32" height="32"></span>
+      <span class="brand-name">Popta</span>
+    </div>
+    <nav>
+      <div class="nav-group">
+        <div class="nav-group-label">まずはここから</div>
+        <a class="nav-link nav-link-primary" href="#guide-home"><span class="num">●</span>ガイドの入口</a>
+        <a class="nav-link nav-link-primary" href="#quick-start"><span class="num">▶</span>最短セットアップ</a>
+      </div>
+      <div class="nav-separator" aria-hidden="true"></div>
+      <div class="nav-group">
+        <div class="nav-group-label">使い方</div>
+        <a class="nav-link" href="#ch01"><span class="num">01</span>Poptaの仕組み</a>
+        <a class="nav-link" href="#ch02"><span class="num">02</span>わんコメ側の準備</a>
+        <a class="nav-link" href="#ch03"><span class="num">03</span>デザインを編集</a>
+        <a class="nav-link" href="#ch04"><span class="num">04</span>OBSへ設定</a>
+        <a class="nav-link" href="#ch05"><span class="num">05</span>用途別に増やす</a>
+        <a class="nav-link" href="#ch06"><span class="num">06</span>保存と読み込み</a>
+        <a class="nav-link" href="#ch07"><span class="num">07</span>デザインを追加</a>
+        <a class="nav-link" href="#ch08"><span class="num">08</span>困ったとき</a>
+        <a class="nav-link" href="#ch09"><span class="num">09</span>制作者向け</a>
+      </div>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button"><span aria-hidden="true">◐</span><span id="themeLabel">表示テーマを切り替え</span></button>
+  </aside>
+
+  <main class="content">
+    <nav class="breadcrumb" aria-label="パンくずリスト">
+      <a class="breadcrumb-link" href="../index.html">Home</a><span class="breadcrumb-sep">›</span>
+      <details class="breadcrumb-dropdown" id="toolsDropdown">
+        <summary class="breadcrumb-link">tools</summary>
+        <ul class="breadcrumb-menu">
+          <li><a href="../TokiSync/TokiSync.html">TokiSync</a></li>
+          <li><a href="../Templatte/Templatte.html">Templatte</a></li>
+          <li><a href="Popta.html" aria-current="page">Popta</a></li>
+        </ul>
+      </details>
+      <span class="breadcrumb-sep">›</span><span class="breadcrumb-current">Popta</span>
+    </nav>
+
+    <header class="doc-header">
+      <p class="doc-eyebrow">Popta Usage Guide</p>
+      <h1 class="doc-title"><img src="icons/popta文字入り.svg" alt="Popta"></h1>
+      <div class="doc-header-actions">
+        <div class="share-widget">
+          <button class="share-btn" id="shareBtn" type="button" aria-haspopup="true" aria-expanded="false">共有</button>
+          <div class="share-menu" id="shareMenu" hidden>
+            <a class="share-menu-item" id="shareTwitter" href="#" target="_blank" rel="noopener">Xでポストする</a>
+            <button class="share-menu-item" id="shareCopy" type="button">リンクをコピーする</button>
+          </div>
+        </div>
+      </div>
+      <p class="doc-lede">配信の高評価数・同時接続数・コメント数などを表示するわんコメテンプレートを準備し、OBSで使う見た目を作るためのガイドです。</p>
+    </header>
+
+    <section class="guide-home" id="guide-home">
+      <div class="guide-home-heading">
+        <div><p class="section-eyebrow">START HERE</p><h2>何をしたいですか？</h2><p>目的に近いところから始められます。</p></div>
+        <a class="start-button" href="#quick-start">最短セットアップ <span aria-hidden="true">→</span></a>
+      </div>
+      <div class="purpose-grid">
+        <a class="purpose-card" href="#ch02"><span class="purpose-icon" aria-hidden="true">犬</span><strong>わんコメへ登録する</strong><span>独立したテンプレートを準備</span></a>
+        <a class="purpose-card" href="#ch03"><span class="purpose-icon" aria-hidden="true">彩</span><strong>見た目を作る</strong><span>バッジとポップアップを編集</span></a>
+        <a class="purpose-card" href="#ch04"><span class="purpose-icon" aria-hidden="true">OBS</span><strong>OBSへ表示する</strong><span>生成CSSをカスタムCSSへ</span></a>
+        <a class="purpose-card" href="#ch07"><span class="purpose-icon" aria-hidden="true">＋</span><strong>デザインを追加する</strong><span>ZIP・design.jsonを読み込む</span></a>
+      </div>
+    </section>
+
+    <section class="quick-start" id="quick-start">
+      <div class="chapter-kicker"><span class="num">▶</span><span class="label">QUICK START</span></div>
+      <h2 class="chapter-title">最短セットアップ</h2>
+      <ol class="popta-steps">
+        <li><strong>Poptaの設定を開く</strong><span>初回に作成されたわんコメテンプレートを確認します。</span></li>
+        <li><strong>わんコメへ登録する</strong><span>テンプレートのフォルダを開き、わんコメへ追加します。</span></li>
+        <li><strong>Poptaで見た目を作る</strong><span>項目、バッジ全体、ポップアップ全体を編集します。</span></li>
+        <li><strong>CSSをコピーする</strong><span>「生成されたCSS」を開き、コピーします。</span></li>
+        <li><strong>OBSへ貼る</strong><span>対象ブラウザソースの「カスタムCSS」へ貼り付けます。</span></li>
+      </ol>
+      <div class="callout note"><span class="icon">i</span><p><strong>表示する仕組みと見た目は別です。</strong> わんコメテンプレートが値を取得し、PoptaがOBSへ貼るCSSを作ります。</p></div>
+    </section>
+
+    <section class="chapter" id="ch01">
+      <div class="chapter-kicker"><span class="num">01</span><span class="label">最初に知ること</span></div>
+      <h2 class="chapter-title">Poptaの仕組み</h2>
+      <div class="popta-flow" aria-label="利用の流れ">
+        <div><strong>わんコメ</strong><span>リアルタイムの値を取得</span></div><b>＋</b>
+        <div><strong>Popta</strong><span>表示内容とCSSを作成</span></div><b>→</b>
+        <div><strong>OBS</strong><span>ブラウザソースへ表示</span></div>
+      </div>
+      <p>わんコメ用テンプレートは、作成したフォルダごとに単体で動作します。別のテンプレートやPoptaのデザインファイルを参照しません。</p>
+      <p>ファイル名が似ていても役割は異なります。</p>
+      <table><thead><tr><th>種類</th><th>役割</th></tr></thead><tbody>
+        <tr><td>わんコメテンプレートのフォルダ</td><td>配信情報を取得・表示する</td></tr>
+        <tr><td><code>デザインフォルダ／ZIP</code></td><td>バッジまたはポップアップのデザインを追加する</td></tr>
+        <tr><td><code>.popta</code></td><td>Pro版で編集内容を保存するプロジェクト</td></tr>
+        <tr><td>生成されたCSS</td><td>OBSブラウザソースのカスタムCSSへ貼る</td></tr>
+      </tbody></table>
+    </section>
+
+    <section class="chapter" id="ch02">
+      <div class="chapter-kicker"><span class="num">02</span><span class="label">わんコメ</span></div>
+      <h2 class="chapter-title">表示用テンプレートを準備する</h2>
+      <ol>
+        <li>画面右上の「設定」を開きます。</li>
+        <li>「わんコメテンプレート」で、初回作成済みのテンプレートを確認します。</li>
+        <li>必要に応じて名前、挨拶判定キーワード、ポップアップ表示時間を編集します。表示時間は秒単位で指定します。</li>
+        <li>Poptaの「フォルダを開く」で対象フォルダを確認します。</li>
+        <li>わんコメの「…」→「テンプレート」を開き、フォルダに＋の追加ボタンから対象フォルダを指定して登録します。</li>
+      </ol>
+      <div class="callout warn"><span class="icon">!</span><p><strong>名前はテンプレートごとに変えてください。</strong> わんコメは<code>template.json</code>の<code>name</code>が同じテンプレートを複数登録できません。</p></div>
+      <p>用途別に複数作成できます。それぞれが必要なHTML・JavaScript・CSS・設定を自分のフォルダ内に持ちます。</p>
+      <div class="screenshot-row">
+        <figure class="screenshot">
+          <img src="../TokiSync/screenshots/ch09-onecomme-plugin-menu.png" alt="わんコメの三点メニューからテンプレートを開く画面" loading="lazy">
+          <figcaption>「…」→「テンプレート」を開きます。</figcaption>
+        </figure>
+        <figure class="screenshot">
+          <img src="../TokiSync/screenshots/ch09-onecomme-plugin-added.png" alt="テンプレート一覧の右上にある、フォルダに＋の追加ボタン" loading="lazy">
+          <figcaption>右上の追加ボタンからPoptaのテンプレートフォルダを指定します。画像はTokiSyncの例です。表示名はPoptaで設定した名前になります。</figcaption>
+        </figure>
+      </div>
+      <h3 id="onecomme-update">登録後に設定を更新したとき</h3>
+      <p>名前・挨拶判定キーワード・表示時間を変更したら、<strong>わんコメ上の登録を一度削除し、更新したフォルダを登録し直してください。</strong> 名前を変更した場合は、変更前の名前の登録を削除します。</p>
+      <p>Poptaの更新完了メッセージにある「テンプレートのフォルダを開く」から、登録し直す対象を確認できます。</p>
+      <div class="callout warn"><span class="icon">!</span><p><strong>削除するのは、わんコメ上の登録だけです。</strong> フォルダ自体や、Poptaの設定画面にあるテンプレートは削除しないでください。</p></div>
+      <p>色や文字サイズなど、見た目だけを変えた場合は再登録ではなく、OBSのカスタムCSSを貼り直します。</p>
+    </section>
+
+    <section class="chapter" id="ch03">
+      <div class="chapter-kicker"><span class="num">03</span><span class="label">編集</span></div>
+      <h2 class="chapter-title">デザインを編集する</h2>
+      <h3>項目ごとの設定</h3>
+      <p>高評価、同時接続数、視聴回数、初コメント、挨拶から項目を選び、表示のON/OFF、ラベル、アクセントカラー、ポップアップ文言を設定します。アクセントカラーは同じ項目のバッジとポップアップで共有されます。</p>
+      <h3>バッジ全体</h3>
+      <p>常に表示する数値のデザイン、位置、フォント、配色、項目間隔や並びを設定します。</p>
+      <h3>ポップアップ全体</h3>
+      <p>値が変化したときの表示デザイン、位置、配色、装飾、登場・退場アニメーションを設定します。「テスト表示」で実際の動きを確認できます。</p>
+      <p>デザインによって表示される設定項目は異なります。横型・縦型キャンバス、中心ガイド、背景色を切り替えながら確認してください。</p>
+    </section>
+
+    <section class="chapter" id="ch04">
+      <div class="chapter-kicker"><span class="num">04</span><span class="label">OBS</span></div>
+      <h2 class="chapter-title">生成したCSSをOBSへ設定する</h2>
+      <ol>
+        <li>Popta下部の「生成されたCSS」を開きます。</li>
+        <li>「コピー」を押します。</li>
+        <li>OBSで、わんコメから追加した対象ブラウザソースのプロパティを開きます。</li>
+        <li>「カスタムCSS」へ貼り付け、決定します。</li>
+        <li>値の更新とポップアップを配信前にテストします。</li>
+      </ol>
+      <div class="callout note"><span class="icon">i</span><p>見た目を変更した後はCSSを再度コピーし、OBS側へ貼り直します。<code>custom_css.css</code>のような追加ファイルは不要です。</p></div>
+    </section>
+
+    <section class="chapter" id="ch05">
+      <div class="chapter-kicker"><span class="num">05</span><span class="label">複数運用</span></div>
+      <h2 class="chapter-title">用途別にテンプレートを増やす</h2>
+      <p>設定画面から、用途ごとに独立したわんコメテンプレートを作れます。配信枠やチャンネルごとに、名前・挨拶キーワード・ポップアップ表示時間を分けられます。</p>
+      <p>わんコメテンプレートと、Poptaの<code>デザインフォルダ／ZIP</code>／<code>.popta</code>には参照関係がありません。OBSへどのCSSを貼るかによって組み合わせます。</p>
+    </section>
+
+    <section class="chapter" id="import-folders"><h2>ZIP・フォルダの取り込み</h2><p>右上の「読み込み」でZIPまたはdesign.jsonを選択します。設定画面の「フォルダから追加」も使えます。複数ZIPとセットZIPに対応し、Pro版で.poptaと同時選択した場合はデザインを先に処理します。</p><p>外部ファイルはAppDataへコピーし、ZIPは編集可能なフォルダへ展開します。取り込み後の修正はAppData側で行います。管理済みフォルダはコピーせず再読み込みします。</p><p>登録済みIDは上書きしません。同時選択内の重複IDは該当分をすべて除外します。識別可能な設定エラーは保存して使用不可として表示し、識別できないファイルは問題一覧へ表示します。</p><p>「デザインをリセット」はファイルを再読み込みして初期値へ戻します。横の「⋮」から再読み込み・デフォルトセットの不足ファイル復元を選べます。</p></section>
+
+    <section class="chapter" id="ch06">
+      <div class="chapter-kicker"><span class="num">06</span><span class="label">ファイル</span></div>
+      <h2 class="chapter-title">保存と読み込み</h2>
+      <table><thead><tr><th>機能</th><th>Standard</th><th>Pro</th></tr></thead><tbody>
+        <tr><td><code>デザインフォルダ／ZIP</code>の読み込み・管理</td><td>利用可能</td><td>利用可能</td></tr>
+        <tr><td><code>.popta</code>プロジェクトの保存・読み込み</td><td>—</td><td>利用可能</td></tr>
+      </tbody></table>
+      <p>画面右上の「読み込み」は両版にあります。Standard版ではデザインテンプレートを、Pro版ではデザインテンプレートとプロジェクトを選択できます。複数ファイルを選んだ場合は<code>デザインフォルダ／ZIP</code>を先に処理します。</p>
+    </section>
+
+    <section class="chapter" id="ch07">
+      <div class="chapter-kicker"><span class="num">07</span><span class="label">デザイン追加</span></div>
+      <h2 class="chapter-title"><code>デザインフォルダ／ZIP</code>を追加・復旧する</h2>
+      <p><code>デザインフォルダ／ZIP</code>を読み込むと、バッジまたはポップアップのギャラリーへデザインが追加されます。設定画面から追加・削除・保存フォルダの表示もできます。</p>
+      <h3>設定エラーがある場合</h3>
+      <p>ファイルを識別できる場合は「設定エラー」のカードとして一覧へ残ります。不正なデザインの設定フォーム、プレビュー、CSSコピーは停止します。</p>
+      <ol>
+        <li>カードを右クリックし「エクスプローラーで表示」を選びます。</li>
+        <li>制作者がファイルを修正します。</li>
+        <li>同じカードを選び「デザインをリセット」を押します。</li>
+      </ol>
+      <h3>デフォルトデザインを消した場合</h3>
+      <p>「デフォルトセットを復元」を押すと、不足ファイルだけを補充します。編集済み・破損中を含む既存ファイルは上書きしません。</p>
+    </section>
+
+    <section class="chapter" id="ch08">
+      <div class="chapter-kicker"><span class="num">08</span><span class="label">FAQ</span></div>
+      <h2 class="chapter-title">困ったとき</h2>
+      <h4>CSSをコピーできない</h4><p>バッジまたはポップアップのデザインを正常に読み込めていません。問題一覧を確認し、再読み込み・修正・復元を行ってください。</p>
+      <h4>わんコメに登録できない</h4><p>登録済みテンプレートと同じ名前になっていないか確認してください。</p>
+      <h4>設定変更が反映されない</h4><p>わんコメ側の設定を変えた場合はテンプレートを再読み込みします。見た目を変えた場合は、OBSのカスタムCSSを貼り直します。</p>
+      <h4>デザインを全部消した</h4><p>デザインフォームまたは設定画面の「デフォルトセットを復元」を実行してください。</p>
+    </section>
+
+    <section class="chapter" id="ch09">
+      <div class="chapter-kicker"><span class="num">09</span><span class="label">CREATORS</span></div>
+      <h2 class="chapter-title">デザインテンプレートを作る</h2>
+      <p><code>デザインフォルダ／ZIP</code>は、design.json、CSS、任意の画像素材を含む自己完結フォルダです。バッジとポップアップは別フォルダとして作ります。</p>
+      <div class="creator-links">
+        <a href="TemplateGuide.html"><strong>制作者向けガイド</strong><span>manifest、Controls、Template API、検証方法</span></a>
+        <a href="TemplateGuide.html#ai"><strong>AIと一緒に作る</strong><span>AIへ渡す資料と、推測させないためのルール</span></a>
+      </div>
+      <div class="callout warn"><span class="icon">!</span><p>JavaScript、任意HTML、任意の外部URLは利用できません。WebフォントはGoogle Fonts・Bunny Fontsの専用設定のみ対応しています。</p></div>
+      <p>Webフォントを使うデザインは、PoptaとOBSから配信サービスへ通信します。ネット接続が必要で、読み込めない場合は代替フォントになります。PC内のフォントを使うデザインは、利用者のPCにも同じフォントが必要です。フォントファイルの同梱には対応していません。</p>
+    </section>
+  </main>
+</div>
+
+<script src="../assets/guide/guide.js"></script>
+</body>
+</html>

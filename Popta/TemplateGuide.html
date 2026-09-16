@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Popta デザインテンプレート制作者ガイド</title>
+<link rel="icon" href="icons/logo.svg" type="image/svg+xml">
+<meta name="description" content="Popta用デザインテンプレートのフォルダの作成・検証・AI利用ガイド">
+<link rel="stylesheet" href="../assets/guide/guide.css">
+<link rel="stylesheet" href="Popta.css">
+</head>
+<body data-guide-id="popta-template" data-guide-share-text="Popta デザインテンプレート制作者ガイド">
+<div id="progress"></div>
+<button class="nav-toggle" id="navToggle" type="button" aria-label="目次を開く">☰ 目次</button>
+<div class="sidebar-scrim" id="scrim"></div>
+<div class="layout">
+  <aside class="sidebar" id="sidebar">
+    <div class="brand"><span class="brand-logo"><img src="icons/logo.svg" alt="" width="32" height="32"></span><span class="brand-name">Popta Template</span></div>
+    <nav><div class="nav-group"><div class="nav-group-label">制作者向け</div>
+      <a class="nav-link nav-link-primary" href="#guide-home"><span class="num">●</span>概要</a>
+      <a class="nav-link" href="#ch01"><span class="num">01</span>パッケージ構造</a>
+      <a class="nav-link" href="#ch02"><span class="num">02</span>manifest</a>
+      <a class="nav-link" href="#ch03"><span class="num">03</span>Controls</a>
+      <a class="nav-link" href="#ch04"><span class="num">04</span>CSS API</a>
+      <a class="nav-link" href="#ch05"><span class="num">05</span>素材</a>
+      <a class="nav-link" href="#ch06"><span class="num">06</span>検証と配布</a>
+      <a class="nav-link" href="#ai"><span class="num">AI</span>AIと作る</a>
+    </div></nav>
+    <button class="theme-toggle" id="themeToggle" type="button"><span aria-hidden="true">◐</span><span id="themeLabel">表示テーマを切り替え</span></button>
+  </aside>
+  <main class="content">
+    <nav class="breadcrumb" aria-label="パンくずリスト"><a class="breadcrumb-link" href="../index.html">Home</a><span class="breadcrumb-sep">›</span><details class="breadcrumb-dropdown" id="toolsDropdown"><summary class="breadcrumb-link">Popta</summary><ul class="breadcrumb-menu"><li><a href="Popta.html">使い方ガイド</a></li><li><a href="TemplateGuide.html" aria-current="page">制作者ガイド</a></li></ul></details><span class="breadcrumb-sep">›</span><span class="breadcrumb-current">デザインテンプレート</span></nav>
+    <header class="doc-header"><p class="doc-eyebrow">Popta Template API v1</p><h1 class="chapter-title">デザインテンプレート制作者ガイド</h1><div class="doc-header-actions"><div class="share-widget"><button class="share-btn" id="shareBtn" type="button" aria-haspopup="true" aria-expanded="false">共有</button><div class="share-menu" id="shareMenu" hidden><a class="share-menu-item" id="shareTwitter" href="#" target="_blank" rel="noopener">Xでポストする</a><button class="share-menu-item" id="shareCopy" type="button">リンクをコピーする</button></div></div></div><p class="doc-lede"><code>デザインフォルダ／ZIP</code>を作成し、Poptaで検証して配布するための仕様です。バッジとポップアップは別々のフォルダとして作ります。</p></header>
+
+    <section class="guide-home" id="guide-home"><div class="guide-home-heading"><div><p class="section-eyebrow">REFERENCE</p><h2>コードと同期した資料</h2><p>AIへ渡す場合も、次の資料を正本として使ってください。</p></div></div><div class="purpose-grid">
+      <a class="purpose-card" href="reference/poptatemplate-author-guide.md"><strong>完全版Markdown</strong><span>人とAIの両方で読める詳細仕様</span></a>
+      <a class="purpose-card" href="reference/poptatemplate-ai-brief.md"><strong>AI向け指示</strong><span>禁止事項と成果物を短く固定</span></a>
+      <a class="purpose-card" href="reference/template-bindings.json"><strong>binding JSON</strong><span>許可された型・対象・安全範囲</span></a>
+      <a class="purpose-card" href="reference/template-css-variables.json"><strong>CSS変数 JSON</strong><span>組み込みで使用確認済みの変数</span></a>
+    </div></section>
+
+    <section class="chapter" id="ch01"><div class="chapter-kicker"><span class="num">01</span><span class="label">PACKAGE</span></div><h2 class="chapter-title">パッケージ構造</h2>
+      <pre class="url-block">my-design/
+├─ design.json
+├─ style.css
+├─ thumbnail.png       # 任意
+└─ assets/             # 任意
+   └─ decoration.svg</pre>
+      <p>1デザインはdesign.jsonを含む独立フォルダです。共有時は通常のZIPにします。親フォルダ付きZIPや、バッジ・ポップアップの独立フォルダをまとめたセットZIPにも対応します。各デザインの素材はそれぞれのフォルダへ入れてください。</p>
+      <div class="callout note"><span class="icon">i</span><p><code>preset</code>と<code>stylesheet</code>は同じ方法で読み込まれます。Popta由来は<code>preset</code>、外部作者の新規デザインは<code>stylesheet</code>を使用します。</p></div>
+    </section>
+
+    <section class="chapter" id="ch02"><div class="chapter-kicker"><span class="num">02</span><span class="label">MANIFEST</span></div><h2 class="chapter-title"><code>design.json</code></h2>
+      <pre class="url-block">{
+  "formatVersion": 1,
+  "templateApiVersion": 1,
+  "id": "creator.example.simple-badge",
+  "name": "シンプルバッジ",
+  "kind": "stylesheet",
+  "target": "badge",
+  "stylesheet": "style.css",
+  "defaults": {},
+  "controls": []
+}</pre>
+      <p><code>id</code>は更新でも変えない固有IDです。3〜128文字を推奨し、英数字から始まり英数字で終わるようにします。途中は英数字、ピリオド、アンダースコア、ハイフンのみ使用できます。<code>popta.official.*</code>は使用しないでください。</p>
+      <p>任意で<code>author</code>、<code>description</code>、<code>thumbnail</code>、<code>license</code>、<code>homepage</code>を指定できます。</p>
+    </section>
+
+    <section class="chapter" id="ch03"><div class="chapter-kicker"><span class="num">03</span><span class="label">FORM</span></div><h2 class="chapter-title">Controlsと初期値</h2>
+      <p>ControlsはPoptaに表示するフォームを宣言します。任意HTMLではありません。すべてに<code>id</code>、<code>type</code>、<code>label</code>、<code>section</code>が必要です。</p>
+      <table><thead><tr><th>type</th><th>主な必須値</th></tr></thead><tbody><tr><td><code>number</code></td><td>binding, min, max, step</td></tr><tr><td><code>color</code></td><td>binding</td></tr><tr><td><code>text</code></td><td>binding, maxLength</td></tr><tr><td><code>boolean</code></td><td>binding</td></tr><tr><td><code>select</code></td><td>binding, options</td></tr><tr><td><code>font</code></td><td>binding</td></tr><tr><td><code>position</code></td><td>xBinding, yBinding, xLabel, yLabel</td></tr><tr><td><code>group</code></td><td>1件以上のcontrols</td></tr></tbody></table>
+      <p><code>defaults</code>には公開bindingだけを正しい型で指定します。色はhex形式です。数値の初期値はControl範囲とPopta安全範囲の両方へ収めます。</p>
+      <p><a href="reference/template-bindings.md">binding一覧を見る →</a></p>
+    </section>
+
+    <section class="chapter" id="ch04"><div class="chapter-kicker"><span class="num">04</span><span class="label">CSS</span></div><h2 class="chapter-title">Template API v1</h2>
+      <p>バッジでは<code>.badges</code>、<code>.cc-badge</code>、<code>.cc-badge-label</code>、<code>.cc-badge-value</code>、<code>.cc-badge--{itemKey}</code>を使用します。ポップアップでは<code>.popup-zone</code>、<code>.popup</code>、<code>.popup-text</code>、<code>.popup--{itemKey}</code>を使用します。</p>
+      <p><code>itemKey</code>は<code>like</code>、<code>viewer</code>、<code>total</code>、<code>firstComment</code>、<code>greeting</code>です。</p>
+      <p><code>html</code>、<code>body</code>、<code>:root</code>、全称セレクタ、<code>:is()</code>、<code>:where()</code>、<code>:has()</code>、<code>@import</code>は使用できません。外部URLにもアクセスできません。</p>
+      <p><a href="reference/template-css-variables.md">使用確認済みCSS変数を見る →</a></p>
+    </section>
+
+    <section class="chapter" id="ch05"><div class="chapter-kicker"><span class="num">05</span><span class="label">ASSETS</span></div><h2 class="chapter-title">画像素材</h2>
+      <p>SVG、PNG、WebP、JPEGを同梱でき、<code>assets/</code>などのサブフォルダも利用できます。CSSの相対<code>url(...)</code>は読込時にData URLへ変換されます。</p>
+      <p>JavaScript、HTML、フォントファイル、ネットワーク画像は同梱できません。SVG内のscript、イベント属性、外部参照なども拒否されます。</p>
+      <h3>Webフォント</h3>
+      <p>Google Fonts・Bunny Fontsのみ、design.jsonの専用設定から利用できます。作者のCSSへ直接書く@import・@font-face・外部URLは引き続き禁止です。</p>
+      <pre><code>"webFonts": [{ "provider": "google", "family": "Noto Sans JP", "weights": [400, 700] }],
+"defaults": { "font": "'Noto Sans JP', sans-serif" }</code></pre>
+      <p>上記はdesign.jsonへ追加する部分の例です。最大4件。providerはgoogle/bunny、familyは80文字以内の英数字・空白・ハイフン、weightsは100〜900の100刻みで1〜9件。通常体のみ対応します。Bunnyの例はfamily: Figtreeです。</p>
+      <p>宣言だけでは適用先は変わりません。defaults.fontまたは許可されたCSSでファミリーを指定し、代替フォントも指定してください。使用する太さ・日本語の収録有無・利用条件を確認してください。プレビューとOBSから外部通信が発生し、読み込めない場合は代替フォントになります。形式検証ではフォント名の実在や通信成功までは確認しません。</p>
+    </section>
+
+    <section class="chapter" id="import-folders"><h2>ZIP・フォルダの取り込み</h2><p>右上の「読み込み」でZIPまたはdesign.jsonを選択します。設定画面の「フォルダから追加」も使えます。複数ZIPとセットZIPに対応し、Pro版で.poptaと同時選択した場合はデザインを先に処理します。</p><p>外部ファイルはAppDataへコピーし、ZIPは編集可能なフォルダへ展開します。取り込み後の修正はAppData側で行います。管理済みフォルダはコピーせず再読み込みします。</p><p>登録済みIDは上書きしません。同時選択内の重複IDは該当分をすべて除外します。識別可能な設定エラーは保存して使用不可として表示し、識別できないファイルは問題一覧へ表示します。</p><p>「デザインをリセット」はファイルを再読み込みして初期値へ戻します。横の「⋮」から再読み込み・デフォルトセットの不足ファイル復元を選べます。</p></section>
+
+    <section class="chapter" id="ch06"><div class="chapter-kicker"><span class="num">06</span><span class="label">TEST</span></div><h2 class="chapter-title">検証と配布</h2>
+      <ol><li>Popta右上の「読み込み」から追加します。</li><li>すべてのControlを最小・最大・ON/OFF・条件表示まで操作します。</li><li>5項目、横型・縦型、日本語、長い文字、ポップアップ遷移を確認します。</li><li>問題一覧が空で、プレビューとCSSコピーが動くことを確認します。</li><li>OBSへ貼り、実際のわんコメテンプレートで確認します。</li></ol>
+      <p>開発中はデザインカードの右クリックからファイルを表示できます。修正後に「デザインをリセット」を押すと、ディスクから再読込します。</p>
+    </section>
+
+    <section class="chapter" id="ai"><div class="chapter-kicker"><span class="num">AI</span><span class="label">ASSISTED CREATION</span></div><h2 class="chapter-title">AIと一緒に作る</h2>
+      <p>AIへは、見た目の要望だけでなく次の4資料を一緒に渡します。</p>
+      <ol><li><a href="reference/poptatemplate-ai-brief.md">AI向け作成指示</a></li><li><a href="reference/poptatemplate-author-guide.md">完全版制作者ガイド</a></li><li><a href="reference/template-bindings.json">binding JSON</a></li><li><a href="reference/template-css-variables.json">CSS変数 JSON</a></li></ol>
+      <div class="callout warn"><span class="icon">!</span><p><strong>AIに名前からbindingやCSS変数を推測させないでください。</strong> リファレンスに存在する値だけを使い、Poptaの問題一覧とOBSで最終確認します。</p></div>
+      <h3>一緒に伝える内容</h3><ul><li>対象がバッジかポップアップか</li><li>表示名と作者名</li><li>固有ID</li><li>作りたい見た目と変更可能にしたい項目</li><li>参考画像や近い組み込みデザイン</li></ul>
+    </section>
+  </main>
+</div>
+<script src="../assets/guide/guide.js"></script>
+</body>
+</html>
